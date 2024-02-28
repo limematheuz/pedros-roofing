@@ -15,7 +15,7 @@ export default function OurStory() {
       <div className="our-story-info">
         <h3>our story</h3>
         <h2>
-          <span>experts</span> in construction & remodeling
+          <span>experts</span> in roofing & restoration
         </h2>
         <p>
           The leading local roofing company. We provide a complete range of
@@ -26,12 +26,14 @@ export default function OurStory() {
           professionals, we are the team for the job.
         </p>
       </div>
+
       <div className="our-story-slider-container" ref={sliderRef}>
-        <img className="ourStory-first" src={cocheSlider} alt="" />
-        <img className="ourStory-first" src={cocheSlider} alt="" />
-        <img className="ourStory-first" src={cocheSlider} alt="" />
-        <img className="ourStory-first" src={cocheSlider} alt="" />
+        <img className="ourStory-slider-img" src={cocheSlider} alt="" />
+        <img className="ourStory-slider-img" src={cocheSlider} alt="" />
+        <img className="ourStory-slider-img" src={cocheSlider} alt="" />
+        <img className="ourStory-slider-img" src={cocheSlider} alt="" />
       </div>
+
       <div className="our-story-second-info">
         <div className="our-story-btns">
         <button onClick={() => scroll(-1200)}>

@@ -58,7 +58,7 @@
   width: 40%;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 25px;
   margin-top: 40px;
@@ -70,7 +70,7 @@
 }
 
 .second-contact-form-info {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -92,7 +92,7 @@
 }
 
 .form-container label {
-  width: 70%;
+  width: 80%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -200,20 +200,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid red;
   }
 
   .contact-form-info {
     width: 100%;
     height: 40%;
     max-height: 400px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 0%;
     gap: 25px;
-    border: 1px solid rgb(255, 255, 255);
   }
 
   .contact-form-info h3 {
@@ -240,7 +235,7 @@
   .form-social-icons {
     width: 40%;
     height: 40px;
-    gap: 25px;
+    justify-content: center;
     margin-top: 0px;
   }
 
@@ -248,9 +243,6 @@
     width: 60%;
     height: 60%;
     max-height: 400px;
-    margin-right: 0%;
-    border: 1px solid red;
-    background-color: rgba(0, 0, 0, 0.715);
   }
 
   .form-container {
@@ -282,35 +274,38 @@
   } 
 
   .info-form-container{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 5% 0 5%;
+    
   }
 
   .contact-form-info {
-    width: 85%;
+    width: 80%;
     height: 50%;
-    max-height: 300px;
+    max-height: 400px;
     align-items: flex-start;
-    margin-left: 0%;
-    gap: 20px;
+    gap: 30px;
+    
   }
 
   .contact-form-info h3 {
-    width: 70%;
+    width: 100%;
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 1px;
     text-align: start;
+    
   }
   
   .contact-form-info h2 {
-    width: 90%;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 2.2rem;
     text-align: start;
+    
   }
   
   .contact-form-info p {
@@ -334,22 +329,23 @@
     height: 50%;
     margin-right: 0%;
     border-radius: 36px;
-    border: 1px solid red;
+    
   }
 
   .form-container {
-    width: 90%;
+    width: 100%;
     height: 100%;
+    
   }
 
   .form-container label {
-    height: 40px;
+    height: 50px;
     width: 70%;
   }
 
   .form-container button {
     width: 40%;
-    height: 40px;
+    height: 50px;
     font-size: 1.4rem;
   }
 

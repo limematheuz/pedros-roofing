@@ -53,6 +53,7 @@ function ContactForm() {
 
   return (
     <section className="contact-form-container">
+      <div className="info-form-container">
       <div className="contact-form-info">
         <h3>contact</h3>
         <h2>schedule a meeting</h2>
@@ -93,6 +94,7 @@ function ContactForm() {
             Form submitted successfully!
           </div>
         )}
+      </div>
       </div>
       <img className="home-form-bg" src={formBg} alt="" />
     </section>

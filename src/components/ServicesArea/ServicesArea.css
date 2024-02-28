@@ -1,0 +1,156 @@
+.services-area-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.services-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgb(25, 0, 255);
+}
+
+.services-info h3 {
+  width: 30%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0064d9;
+  text-transform: uppercase;
+  text-decoration: underline;
+  border: 1px solid red;
+}
+
+.services-info h2 {
+  width: 35%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+
+.services-info h2 span {
+  color: #0064d9;
+}
+
+.services-area-items{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    border: 1px solid rgb(238, 0, 255);
+}
+
+.services-area-btns {
+  width: 10%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  border: 1px solid rgb(21, 0, 255);
+}
+
+.sevices-first-btns {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid #0085ff;
+  border-radius: 20px;
+}
+
+.services-area-btns button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid rgb(195, 0, 255);
+  /* Eliminar el color de fondo predeterminado */
+}
+
+.services-area-btns button.active {
+  width: 100%;
+  height: 50%;
+  background-color: #0064d9;
+  border-radius: 16px 16px;
+ 
+}
+
+.sevices-first-btns hr {
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 3px;
+  background-color: #0085ff;
+}
+
+/* .sevices-first-btns button,
+.services-second-btns button {
+  background-color: #0064d9;
+}
+
+.sevices-first-btns button.active,
+.services-second-btns button.active {
+  background-color: #0064d9;
+} */
+
+.services-second-btns {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0064d9;
+  border: 4px solid #0085ff;
+  border-radius: 36px;
+}
+
+.services-second-btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #0065d900;
+}
+
+.services-second-btns img {
+  width: 30px;
+  height: 30px;
+}
+
+.services-second-btns hr {
+  height: 80%;
+  width: 4px;
+  border-radius: 3px;
+  background-color: #0085ff;
+  border: none;
+}
+
+.services-area-slider-container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 255, 251);
+}
+
+.service-area-card-container img{
+    width: 200px;
+    height: 300px;
+}

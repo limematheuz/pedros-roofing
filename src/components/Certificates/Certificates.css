@@ -1,0 +1,104 @@
+.certificate-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px 0px 0px;
+  }
+  
+  .certificate-container h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(113, 113, 113);
+    letter-spacing: 1px;
+  }
+  
+  .logo-certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    gap: 5%;
+  }
+  
+  .certificate-logo {
+    width: 110px;
+    filter: grayscale(1);
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .certificate-logo:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  
+  .certificate-logo-last {
+    width: 160px;
+    filter: grayscale(1);
+    transition: all ease-in-out 0.3s;
+  }
+  .certificate-logo-last:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  
+  @media (max-width: 1024px) {
+    .logo-certificate-container {
+      width: 100%;
+      height: 160px;
+    }
+    .certificate-container h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: rgb(113, 113, 113);
+    }
+    .certificate-logo {
+      width: 100px;
+    }
+    .certificate-logo:hover {
+      width: 110px;
+    }
+    .certificate-logo-last {
+      width: 110px;
+      filter: grayscale(1);
+      transition: all ease-in-out 0.3s;
+    }
+    .certificate-logo-last:hover {
+      width: 120px;
+      filter: grayscale(0);
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .logo-certificate-container {
+      width: 100%;
+      height: 120px;
+      gap: 3%;
+    }
+    .certificate-container h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: rgb(113, 113, 113);
+    }
+    .certificate-logo {
+      width: 60px;
+    }
+    .certificate-logo:hover {
+      width: 70px;
+    }
+    .certificate-logo-last {
+      width: 60px;
+      filter: grayscale(1);
+      transition: all ease-in-out 0.3s;
+    }
+    .certificate-logo-last:hover {
+      width: 70px;
+      filter: grayscale(0);
+    }
+  }
+  

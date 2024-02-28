@@ -1,0 +1,126 @@
+.our-story-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.our-story-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid rgb(0, 34, 255);
+}
+
+.our-story-info h3 {
+  width: 30%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0064d9;
+  text-transform: uppercase;
+  text-decoration: underline;
+  border: 1px solid red;
+}
+
+.our-story-info h2 {
+  width: 35%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid red;
+}
+
+.our-story-info h2 span {
+  color: #0064d9;
+}
+
+.our-story-info p {
+  width: 35%;
+  border: 1px solid red;
+}
+
+.our-story-slider-container{
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid red;
+    overflow-x: scroll;
+}
+
+.ourStory-first{
+    width: 800px;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    /* object-position: left; */
+    border: 1px solid red;
+}
+
+
+.our-story-second-info{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid rgb(0, 34, 255);
+}
+
+.our-story-second-info button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0064d9;
+    border-radius: 36px; 
+    border: none;  
+    cursor: pointer; 
+}
+
+.our-story-second-info hr{
+    height: 30px;
+    width: 3px;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.our-story-second-info img{
+    width: 30px;
+    height: 30px;
+}
+
+.our-story-second-info p{
+    max-width: 500px;
+    width: 90%;
+    text-align: end;
+    border: 1px solid red;
+}
+
+.our-story-btns{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0064d9;
+    border-radius: 36px;  
+    border: 3px solid #0085FF; 
+    
+}
+
+.arrow-right{
+    transform: rotate(180deg);
+}
+

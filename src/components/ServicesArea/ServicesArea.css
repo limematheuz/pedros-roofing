@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid red;
+  background-color: rgb(0, 0, 0);
+  gap: 30px;
 }
 
 .services-info {
@@ -14,7 +15,7 @@
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   border: 1px solid rgb(25, 0, 255);
 }
 
@@ -30,6 +31,7 @@
 
 .services-info h2 {
   width: 35%;
+  color: white;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -40,27 +42,28 @@
   color: #0064d9;
 }
 
-.services-area-items{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    border: 1px solid rgb(238, 0, 255);
+.services-area-items {
+  width: 90%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  border: 1px solid rgb(238, 0, 255);
 }
 
 .services-area-btns {
-  width: 10%;
-  height: 500px;
+  width: 15%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   border: 1px solid rgb(21, 0, 255);
 }
 
 .sevices-first-btns {
-  width: 100%;
+  width: 140px; 
   height: 160px;
   display: flex;
   justify-content: center;
@@ -68,6 +71,7 @@
   flex-direction: column;
   border: 3px solid #0085ff;
   border-radius: 20px;
+  /* aqui el tamaño de los botones */
 }
 
 .services-area-btns button {
@@ -79,16 +83,15 @@
   border: none;
   color: white;
   background-color: transparent;
-  border: 2px solid rgb(195, 0, 255);
   /* Eliminar el color de fondo predeterminado */
 }
 
-.services-area-btns button.active {
-  width: 100%;
+.services-area-btns button.active { 
+  width: 90%;
   height: 50%;
   background-color: #0064d9;
   border-radius: 16px 16px;
- 
+  /* aqui estan los estilos de los botones interir exterior */
 }
 
 .sevices-first-btns hr {
@@ -116,8 +119,9 @@
   justify-content: center;
   align-items: center;
   background-color: #0064d9;
-  border: 4px solid #0085ff;
+  border: 3px solid #0085ff;
   border-radius: 36px;
+  /* aqui los estilos de las flechas de abajo */
 }
 
 .services-second-btns button {
@@ -125,7 +129,7 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: #0065d900;
+  background-color: #9fbad800;
 }
 
 .services-second-btns img {
@@ -135,23 +139,58 @@
 
 .services-second-btns hr {
   height: 80%;
-  width: 4px;
+  width: 8px;
   border-radius: 3px;
   background-color: #0085ff;
   border: none;
 }
 
-.services-area-slider-container{
-    width: 85%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(0, 255, 251);
-    overflow-x: scroll;
+.services-area-slider-container {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 255, 251);
+  overflow-x: scroll;
+  gap: 20px;
 }
 
-.service-area-card-container img{
-    width: 200px;
-    height: 300px;
+.services-area-slider-container p{
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.services-card {
+  position: relative;
+  z-index: 0;
+  width: 250px;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.services-area-slider-container .services-card-arrow {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  background-color: rgba(255, 255, 255, 0.395);
+  border-radius: 16px 0 16px 0;
+  transform: rotate(270deg);
+  position: absolute;
+  z-index: 2;
+}
+
+@media (max-width:600px) {
+  .services-area-container {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    gap: 30px;
+    border: 1px solid red;
+  }
 }

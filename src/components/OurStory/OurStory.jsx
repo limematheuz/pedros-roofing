@@ -36,11 +36,11 @@ export default function OurStory() {
 
       <div className="our-story-second-info">
         <div className="our-story-btns">
-        <button onClick={() => scroll(-1200)}>
+        <button onClick={() => scroll(-1600)}>
           <img src={arrow} alt="" />
         </button>
         <hr />
-        <button onClick={() => scroll(1200)}>
+        <button onClick={() => scroll(1600)}>
           <img className="arrow-right" src={arrow} alt="" />
         </button>
         </div>

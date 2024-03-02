@@ -56,23 +56,11 @@ export default function ServicesArea() {
             </button>
           </div>
         </div>
-        <div className="services-area-slider-container">
-          <div className="service-area-card-container">
+          <a className="services-area-slider-container" href="">
             <p>residencial</p>
-            <img src="" alt="" />
-            <img src={serviceimg} alt="" />
-          </div>
-          <div className="service-area-card-container">
-            <p></p>
-            <img src="" alt="" />
-            <img src={serviceimg} alt="" />
-          </div>
-          <div className="service-area-card-container">
-            <p></p>
-            <img src="" alt="" />
-            <img src={serviceimg} alt="" />
-          </div>
-        </div>
+            <img className="services-card-arrow" src={arrow} alt="" />
+            <img className="services-card" src={serviceimg} alt="" />
+          </a>
       </div>
     </section>
   );

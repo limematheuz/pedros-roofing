@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 60px 0px 0px 0px;
+    margin-top: 80px;
+    border: 1px solid red;
   }
   
   .certificate-container h2 {
@@ -60,7 +61,7 @@
       width: 100px;
     }
     .certificate-logo:hover {
-      width: 110px;
+      transform: scale(1.1);
     }
     .certificate-logo-last {
       width: 110px;
@@ -68,7 +69,7 @@
       transition: all ease-in-out 0.3s;
     }
     .certificate-logo-last:hover {
-      width: 120px;
+      transform: scale(1.1);
       filter: grayscale(0);
     }
   }
@@ -89,7 +90,7 @@
       width: 60px;
     }
     .certificate-logo:hover {
-      width: 70px;
+      transform: scale(1.1);
     }
     .certificate-logo-last {
       width: 60px;
@@ -97,7 +98,7 @@
       transition: all ease-in-out 0.3s;
     }
     .certificate-logo-last:hover {
-      width: 70px;
+      transform: scale(1.1);
       filter: grayscale(0);
     }
   }

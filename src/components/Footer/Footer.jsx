@@ -1,69 +1,96 @@
 import "./Footer.css";
 import footerRoof from "../../assets/img/red-roof-with-clouds.jpg";
+import whiteLogo from "../../assets/img/white-logo.svg";
+
+import wpp from "../../assets/icons/whatsapp.svg";
+import phone from "../../assets/icons/phone-solid.svg";
+import email from "../../assets/icons/envelope-regular.svg";
+import insta from "../../assets/icons/white-instagram.svg";
+import fb from "../../assets/icons/white-fb.svg";
+import linkedin from "../../assets/icons/linkedin-figma.svg";
 
 export default function Footer() {
   return (
     <footer className="footer-container">
-      <section className="info-footer">
-        <div>
-          <h4>Services</h4>
-          <p>Commercial Roofing</p>
-          <p>Residencial Roofing</p>
-          <p>Emergency Roofing</p>
-          <p>Roof Installation</p>
-          <p>Roof Inspection</p>
-          <p>Flooring</p>
-          <p>Roof Repairs</p>
-          <p>Remodeling</p>
-          <p>Siding</p>
+      <span className="first-black-box"></span>
+      <div className="footer-logo">
+          <img src={whiteLogo} alt="" />
         </div>
+      <section className="info-footer-container">
+       
 
-        <div>
-          <h4>Contact</h4>
-          <div>
-            <img src="" alt="" />
-            <p>+1 (919) 279-1958</p>
+        <div className="info-footer">
+          <div className="footer-services-info">
+            <h4>
+              Services
+              <hr />
+            </h4>
+            <div className="footer-services-column">
+              <div className="footer-first-column">
+                <p>Commercial Roofing</p>
+                <p>Residencial Roofing</p>
+                <p>Emergency Roofing</p>
+                <p>Roof Installation</p>
+                <p>Roof Inspection</p>
+              </div>
+              <div className="footer-second-column">
+                <p>Flooring</p>
+                <p>Roof Repairs</p>
+                <p>Remodeling</p>
+                <p>Siding</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <p>+1 (919) 279-1958</p>
+
+          <div className="footer-contact-info">
+            <h4>
+              Contact
+              <hr />
+            </h4>
+            <div className="footer-contact-items">
+              <img src={wpp} alt="" />
+              <p>+1 (919) 279-1958</p>
+            </div>
+            <div className="footer-contact-items">
+              <img src={phone} alt="" />
+              <p>+1 (919) 279-1958</p>
+            </div>
+            <div className="footer-contact-items">
+              <img src={email} alt="" />
+              <p>contact@pedrosroofing.com</p>
+            </div>
           </div>
-          <div>
-            <img src="" alt="" />
-            <p>contact@rrjconstruction.com</p>
+
+          <div className="footer-social-info">
+            <h4>
+              Social Media
+              <hr />
+            </h4>
+            <div className="footer-social-items">
+              <img src={insta} alt="" />
+              <p>@pedrosroofing</p>
+            </div>
+            <div className="footer-social-items">
+              <img src={fb} alt="" />
+              <p>@pedrosroofing</p>
+            </div>
+            <div className="footer-social-items">
+              <img src={linkedin} alt="" />
+              <p>Pedro’s Roofing</p>
+            </div>
           </div>
         </div>
-
-        <div>
-          <h4>Social Media</h4>
-          <div>
-            <img src="" alt="" />
-            <p>@pedrosroofing</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>@pedrosroofing</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>Pedro’s Roofing</p>
-          </div>
-        </div>
-
-        <section className="footer-logo">
-        <img src="" alt="" />
-        aqui va el logo
-      </section>
-      
-      </section>
-
-      
-      <div className="line-info-bottom">
-        <hr />
-        <p>2024 All Rights Reserved -Pedro’s Roofing</p>
+        <div className="line-info-bottom">
+        <hr className="footer-line-bottom" />
+        <p>2024 All Rights Reserved - Pedro’s Roofing</p>
       </div>
+     
+      <span className="second-black-box"></span>
+      </section>
 
-      {/* <img className="footer-img" src={footerRoof} alt="" /> */}
+       <img className="footer-img" src={footerRoof} alt="" />
+
+      
     </footer>
   );
 }

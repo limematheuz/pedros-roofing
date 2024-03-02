@@ -22,7 +22,7 @@ export default function HomePage() {
           <div className="header-title-container">
             <div className="info-home-title">
               <h1>
-                remodeling & <br /> home improvements
+                 pedro's remodeling & <br /> home improvements
               </h1>
               <h3>North Carolina, USA</h3>
             </div>

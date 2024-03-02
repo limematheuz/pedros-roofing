@@ -9,13 +9,13 @@ export default function Menu() {
   return (
     <nav className="menu-container">
       {/* <section className="menu-items"> */}
-        <div className="menu-logo">
+        <Link to={"/"} className="menu-logo">
           <img src={whiteLogo} alt="" />
-        </div>
+        </Link>
         <div className="menu-links">
-          <Link className="menu-link-item">home</Link>
-          <Link className="menu-link-item">services</Link>
-          <Link className="menu-link-item">contact</Link>
+          <Link to={"/"} className="menu-link-item">home</Link>
+          <Link to={"/services"} className="menu-link-item">services</Link>
+          <Link to={"/contact"} className="menu-link-item">contact</Link>
         </div>
         <div className="menu-icons">
           <a href=""><img src={phone} alt="" /></a>

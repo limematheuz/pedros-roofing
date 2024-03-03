@@ -291,13 +291,14 @@
   }
 
   .parraf-bottom {
-    width: 90%;
+    width: 100%;
   }
   
   .parraf-bottom p {
     font-size: 1rem;
     max-width: 400px;
     text-align: start;
+    border: 1px solid;
   }
 
   

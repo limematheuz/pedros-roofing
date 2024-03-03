@@ -9,6 +9,10 @@
   background-color: #0064d9;
 }
 
+.benefits-responsive-container{
+  display: none;
+}
+
 .benefits-items-container {
   width: 100%;
   height: 100%;
@@ -96,7 +100,7 @@
     border: 2px solid #2294ff;
     background-color: #0065d9d7;
     backdrop-filter: blur(10px);
-    border-radius: 42px 0 0 42px;
+    border-radius: 50px 0 0 50px;
   }
 
   .responsive-benefits-items {
@@ -152,7 +156,7 @@
     border: 2px solid #2294ff;
     background-color: #0065d9d7;
     backdrop-filter: blur(10px);
-    border-radius: 42px 0 0 42px;
+    border-radius: 50px 0 0 50px;
   }
 
   .responsive-benefits-items {

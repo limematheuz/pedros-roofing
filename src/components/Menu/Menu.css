@@ -119,16 +119,15 @@
       }
     
       .responsive-menu-container {
-        width: 98%;
+        width: 99%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 16px 16px 0 0;
+        border-radius: 32px 32px 0 0;
         border: 2px solid #0085ff;
         background-color: #0065d9d7;
         backdrop-filter: blur(10px);
-    
       }
     
       .first-responsive-items,

@@ -1,6 +1,6 @@
 import "./Benefits.css";
 
-import toolIcon from "../../assets/icons/tool-figma.svg";
+import toolIcon from "../../assets/icons/blue-tool.svg";
 import smileIcon from "../../assets/icons/smile-figma.svg";
 import workerIcon from "../../assets/icons/worker-figma.svg";
 

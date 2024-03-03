@@ -135,15 +135,15 @@
 }
 
 .parraf-bottom {
-  width: 60%;
+  width: 70%;
 }
 
 .parraf-bottom p {
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 1.1;
-  max-width: 600px;
-  width: 100%;
+  max-width: 800px;
+  width: 75%;
   text-align: end;
 }
 
@@ -258,7 +258,7 @@
 
   .ourStory-slider-img {
     width: 260px;
-    min-width: 260px;
+    min-width: 250px;
     object-position: left;
   }
 

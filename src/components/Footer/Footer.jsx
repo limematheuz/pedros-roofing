@@ -13,12 +13,12 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <span className="first-black-box"></span>
-      <div className="footer-logo">
-          <img src={whiteLogo} alt="" />
-        </div>
-      <section className="info-footer-container">
-       
 
+      <section className="footer-logo">
+        <img src={whiteLogo} alt="" />
+      </section>
+
+      <section className="info-footer-container">
         <div className="info-footer">
           <div className="footer-services-info">
             <h4>
@@ -80,17 +80,15 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="line-info-bottom">
-        <hr className="footer-line-bottom" />
-        <p>2024 All Rights Reserved - Pedro’s Roofing</p>
-      </div>
-     
-      <span className="second-black-box"></span>
+
+        <section className="line-info-bottom">
+          <hr className="footer-line-bottom" />
+          <p>2024 All Rights Reserved - Pedro’s Roofing</p>
+        </section>
+
+        <span className="second-black-box"></span>
       </section>
-
-       <img className="footer-img" src={footerRoof} alt="" />
-
-      
+      <img className="footer-img" src={footerRoof} alt="" />
     </footer>
   );
 }

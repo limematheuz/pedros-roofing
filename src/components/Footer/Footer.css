@@ -9,7 +9,7 @@
   margin-top: 100px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.502);
-  /* z-index: ; */
+  border: 2px solid red;
 }
 
 .first-black-box {
@@ -177,7 +177,7 @@
 
 .line-info-bottom {
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -271,7 +271,6 @@
 
 @media (max-width:600px){
   .footer-container{
-    display: flex;
-    
+    display: none;
   }
 }

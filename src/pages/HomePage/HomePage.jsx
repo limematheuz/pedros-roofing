@@ -7,8 +7,11 @@ import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
 
 import Menu from "../../components/Menu/Menu";
+import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
+import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import OurStory from "../../components/OurStory/OurStory";
+import AdsBanner from "../../components/AdsBanner/AdsBanner";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
 import Certificates from "../../components/Certificates/Certificates";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -48,12 +51,16 @@ export default function HomePage() {
         </section>
         <div className="aisde-menu-container">
           <Menu />
+          <MenuResponsive/>
         </div>
+        <div></div>
         <div className="bottom-benefits-container">
           <Benefits />
+          <ResponsiveBenefits/>
         </div>
       </section>
       <OurStory />
+      <AdsBanner/>
       <ServicesArea />
       <Certificates />
       <ContactForm />

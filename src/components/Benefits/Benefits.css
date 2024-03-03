@@ -164,11 +164,11 @@
   }
 
   .responsive-benefits-items img{
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     background-color: white;
     border-radius: 50%;
-    padding: 15px;
+    padding: 10px;
   }
 
   .responsive-benefits-items h3{

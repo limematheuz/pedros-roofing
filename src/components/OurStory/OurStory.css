@@ -208,7 +208,7 @@
   .our-story-container {
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .cont-our-story-items {
@@ -283,6 +283,10 @@
   .our-story-btns img {
     width: 30px;
     height: 30px;
+  }
+
+  .our-story-second-info {
+    gap: 40px;
   }
 
   .our-story-second-info hr {

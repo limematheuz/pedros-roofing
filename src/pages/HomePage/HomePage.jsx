@@ -5,7 +5,6 @@ import houseBgMobile from "../../assets/img/house-bg-mobile.png";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
-
 import Menu from "../../components/Menu/Menu";
 import Benefits from "../../components/Benefits/Benefits";
 import OurStory from "../../components/OurStory/OurStory";

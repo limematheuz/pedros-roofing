@@ -256,7 +256,7 @@
 
   .first-card-container,
   .second-card-container {
-    min-width: 80%;
+    min-width: 100%;
     height: 40%;
   }
 

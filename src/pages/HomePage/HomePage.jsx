@@ -31,7 +31,7 @@ export default function HomePage() {
             </div>
             <div className="home-btns">
               <div className="header-contact-btn-cont">
-                <Link className="contact-button" to={"/service"}>
+                <Link className="contact-button" to={"/contact"}>
                   contact us
                 </Link>
                 <img src={arrowRight} alt="" />

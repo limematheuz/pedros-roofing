@@ -10,15 +10,15 @@ export default function MenuResponsive() {
     <section className="responsive-menu-container">
       <div className="first-responsive-items">
         <img src={house} alt="" />
-        <Link className="menu-responsive-btns">Home</Link>
+        <Link to={"/"} className="menu-responsive-btns">Home</Link>
       </div>
       <div className="second-responsive-items">
         <img src={tool} alt="" />
-        <Link className="menu-responsive-btns">Services</Link>
+        <Link to={"/services"} className="menu-responsive-btns">Services</Link>
       </div>
       <div className="third-responsive-items">
         <img src={phone} alt="" />
-        <Link className="menu-responsive-btns">Contact</Link>
+        <Link to={"/contact"} className="menu-responsive-btns">Contact</Link>
       </div>
     </section>
   );

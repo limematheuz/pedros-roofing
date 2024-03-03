@@ -1,22 +1,25 @@
-import "./HomePage.css";
+import "./FreeInspectionPage.css";
 import { Link } from "react-router-dom";
-import houseBg from "../../assets/img/main-house-bg.jpg";
-import houseBgMobile from "../../assets/img/house-bg-mobile.png";
+import houseBg from "../../assets/img/financing-banner.jpg";
+import houseBgMobile from "../../assets/img/bg-mobile-financing.jpg";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
+
 import Menu from "../../components/Menu/Menu";
 import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import OurStory from "../../components/OurStory/OurStory";
+import Certificates from "../../components/Certificates/Certificates";
+import FreeInspectionIntro from "../../components/FreeInspectionIntro/FreeInspectionIntro";
+import FreeInspectionBenefits from "../../components/FreeInspectionBenefits/FreeInspectionBenefits";
 import AdsBanner from "../../components/AdsBanner/AdsBanner";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
-import Certificates from "../../components/Certificates/Certificates";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
-export default function HomePage() {
+export default function FreeInspectionPage() {
   return (
     <main className="body-app-container">
       <section className="header-menu-container">
@@ -24,9 +27,9 @@ export default function HomePage() {
           <div className="header-title-container">
             <div className="info-home-title">
               <h1>
-                 pedro's remodeling & <br /> home improvements
+              CALL AS TODAY FOR A <br /> free inspection
               </h1>
-              <h3>North Carolina, USA</h3>
+              <h3>ONE CALL DOES IT ALL</h3>
             </div>
             <div className="home-btns">
               <div className="header-contact-btn-cont">
@@ -34,7 +37,7 @@ export default function HomePage() {
                   contact us
                 </Link>
                 <img src={arrowRight} alt="" />
-              </div>
+              </div> 
               <div className="home-social-links">
                 <a href="">
                   <img src={insta} alt="" />
@@ -58,10 +61,12 @@ export default function HomePage() {
           <ResponsiveBenefits/>
         </div>
       </section>
+      <Certificates /> 
+      <FreeInspectionIntro/>
+      <FreeInspectionBenefits/>
       <OurStory />
       <AdsBanner/>
       <ServicesArea />
-      <Certificates />
       <ContactForm />
       <Footer />
     </main>

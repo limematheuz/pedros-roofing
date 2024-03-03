@@ -136,15 +136,15 @@
 }
 
 .parraf-bottom {
-  width: 60%;
+  width: 70%;
 }
 
 .parraf-bottom p {
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 1.1;
-  max-width: 600px;
-  width: 100%;
+  max-width: 800px;
+  width: 75%;
   text-align: end;
 }
 
@@ -209,7 +209,7 @@
   .our-story-container {
     width: 100%;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .cont-our-story-items {
@@ -259,7 +259,7 @@
 
   .ourStory-slider-img {
     width: 260px;
-    min-width: 260px;
+    min-width: 250px;
     object-position: left;
   }
 
@@ -286,13 +286,17 @@
     height: 30px;
   }
 
+  .our-story-second-info {
+    gap: 40px;
+  }
+
   .our-story-second-info hr {
     height: 80%;
     min-width: 2px;
   }
 
   .parraf-bottom {
-    width: 90%;
+    width: 100%;
   }
   
   .parraf-bottom p {

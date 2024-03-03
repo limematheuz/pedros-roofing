@@ -1,15 +1,17 @@
 import React from "react";
 import { Routes, Route} from "react-router-dom";
-import Home from "./pages/HomePage/HomePage.jsx";
-import Services from "./pages/ServicesPage/ServicesPage.jsx";
-import Contact from "./pages/ContactPage/ContactPage.jsx";
+import HomePage from "./pages/HomePage/HomePage.jsx";
+import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
+import ContactPage from "./pages/ContactPage/ContactPage.jsx";
+import FreeInspectionPage from "./pages/FreeInspectionPage/FreeInspectionPage.jsx";
 
 export default function Router() {
     return(
         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/services" element={<Services/>}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/services" element={<ServicesPage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/free-inspection" element={<FreeInspectionPage/>}/>
         </Routes>
     )
 }

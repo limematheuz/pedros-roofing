@@ -15,6 +15,10 @@ import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import check from "../../assets/icons/circle-check-regular.svg";
 import financingOne from "../../assets/img/financing-item-one.jpg";
+import ServicesArea from "../../components/ServicesArea/ServicesArea";
+import OurStory from "../../components/OurStory/OurStory";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import Footer from "../../components/Footer/Footer";
 
 
 export default function FinancyPage() {
@@ -126,6 +130,10 @@ export default function FinancyPage() {
             </section>
           </div>
         </section>
+        <ServicesArea/>
+        <OurStory/>
+        <ContactForm/>
+        <Footer/>
       </section>
     </main>
   );

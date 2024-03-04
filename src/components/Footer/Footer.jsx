@@ -12,16 +12,28 @@ import linkedin from "../../assets/icons/linkedin-figma.svg";
 export default function Footer() {
   return (
     <footer className="footer-container">
-      <span className="first-black-box"></span>
-      <section className="footer-logo">
-        <img src={whiteLogo} alt="" />
-      </section>
-      <section className="info-footer-container">
-        <div className="info-footer">
+      <section className="cont-info-footer">
+        <section className="footer-logo">
+          <img src={whiteLogo} alt="logo-pedros-remodeling" />
+          <p className="direction-footer">
+            North Carolina & Surrounding Areas United States.
+          </p>
+          <div className="footer-social-info">
+            <a href="https://" className="footer-social-items">
+              <img src={insta} alt="" />
+            </a>
+            <a  href="https://" className="footer-social-items">
+              <img src={fb} alt="" />
+            </a>
+            <a  href="https://" className="footer-social-items">
+              <img src={linkedin} alt="" />
+            </a>
+          </div>
+        </section>
+        <section className="info-footer-container">
           <div className="footer-services-info">
             <h4>
               Services
-              <hr />
             </h4>
             <div className="footer-services-column">
               <div className="footer-first-column">
@@ -31,7 +43,7 @@ export default function Footer() {
                 <p>Roof Installation</p>
                 <p>Roof Inspection</p>
               </div>
-              <div className="footer-second-column">
+              <div className="footer-first-column">
                 <p>Flooring</p>
                 <p>Roof Repairs</p>
                 <p>Remodeling</p>
@@ -39,11 +51,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
           <div className="footer-contact-info">
             <h4>
               Contact
-              <hr />
             </h4>
             <div className="footer-contact-items">
               <img src={wpp} alt="" />
@@ -55,38 +65,15 @@ export default function Footer() {
             </div>
             <div className="footer-contact-items">
               <img src={email} alt="" />
-              <p>contact@pedrosroofing.com</p>
+              <p>contact@pedrosremodeling.com</p>
             </div>
           </div>
-
-          <div className="footer-social-info">
-            <h4>
-              Social Media
-              <hr />
-            </h4>
-            <div className="footer-social-items">
-              <img src={insta} alt="" />
-              <p>@pedrosroofing</p>
-            </div>
-            <div className="footer-social-items">
-              <img src={fb} alt="" />
-              <p>@pedrosroofing</p>
-            </div>
-            <div className="footer-social-items">
-              <img src={linkedin} alt="" />
-              <p>Pedro’s Roofing</p>
-            </div>
-          </div>
-        </div>
-
-        <section className="line-info-bottom">
-          <hr className="footer-line-bottom" />
-          <p>2024 All Rights Reserved - Pedro’s Roofing</p>
         </section>
-
-        <span className="second-black-box"></span>
       </section>
-      <img className="footer-img" src={footerRoof} alt="" />
+      <section className="line-info-bottom">
+        <p>2024 All Rights Reserved - Pedro’s Roofing</p>
+      </section>
+      <img className="footer-img" src={footerRoof} alt="bg-footer" />
     </footer>
   );
 }

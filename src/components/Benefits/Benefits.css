@@ -39,7 +39,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  margin-top: -40px;
 }
 
 .first-item-column .box-benefits-home{

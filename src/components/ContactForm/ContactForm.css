@@ -73,6 +73,7 @@
 
 .second-contact-form-info {
   width: 45%;
+  max-height: 500px;
   height: 100%;
   display: flex;
   justify-content: center;

@@ -27,7 +27,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .menu-link-item {
@@ -40,7 +40,7 @@
   background-color: white;
   padding: 8px 10px;
   border-radius: 24px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-decoration: none;
@@ -55,8 +55,8 @@
 }
 
 .menu-icons img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 1024px) {

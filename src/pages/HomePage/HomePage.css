@@ -134,7 +134,7 @@
   bottom: 3px;
   left: 0;
   width: 780px;
-  height: 130px;
+  height: 100px;
 }
 
 @media (max-width:1024px) {
@@ -171,9 +171,9 @@
   .bottom-benefits-container{
     position: absolute;
     left: 84.5%;
-    top: 20%;
+    top: 10%;
     width: 15%;
-    height: 700px;
+    height: 650px;
   }
 }
 

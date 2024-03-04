@@ -1,14 +1,19 @@
-import "./FreeInspectionIntro.css"
+import "./FreeInspectionIntro.css";
 import { Link } from "react-router-dom";
+
+import phone from "../../assets/icons/phone-solid.svg";
+import mail from "../../assets/icons/envelope-regular.svg";
+import wpp from "../../assets/icons/whatsapp.svg";
 
 export default function FreeInspectionIntro() {
   return (
-    <section className="free-inspection-intro-container">
-      <section className="container-free-intro">
-        <div className="info-free-intro">
+    <section className="container-free-intro">
+      <section className="left-free-container">
+        <section className="info-free-intro">
           <h3>FREE INSPECTION</h3>
           <h2>
-            DID YOU KNOW THAT YOUR ROOFING CAN BE REPLACED UNDER INSURANCE?
+            <span>DID YOU KNOW THAT </span>YOUR ROOFING CAN BE REPLACED UNDER
+            INSURANCE?
           </h2>
           <p>
             The leading local roofing company. We provide a complete range of
@@ -18,33 +23,21 @@ export default function FreeInspectionIntro() {
             beyond to meet our clients’ needs. For quality roofing from trusted
             professionals, we are the team for the job.
           </p>
-        </div>
-        <div className="free-intro-btns">
+        </section>
+        <section className="free-intro-btns">
           <div className="intro-contact-free-btn">
-            <Link> free inspection</Link>
+            <Link className="cta-free-inspection"> free inspection!</Link>
           </div>
           <div className="social-links-intro">
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-          </div>
-        </div>
-        <section className="cards-free-intro">
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
+            <a href="">
+              <img src={phone} alt="" />
+            </a>
+            <a href="">
+              <img src={mail} alt="" />
+            </a>
+            <a href="">
+              <img src={wpp} alt="" />
+            </a>
           </div>
         </section>
       </section>

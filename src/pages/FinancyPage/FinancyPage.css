@@ -1,0 +1,113 @@
+.container-butons-general {
+  margin-left: 5%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.container-butons-general button {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 10px 17px;
+  background-color: white;
+  border: 2px solid #0064d9;
+  color: #0064d9;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.container-butons-general button:hover {
+  background-color: #0064d9;
+  color: white;
+}
+
+.container-butons-general a {
+  width: 40px;
+  height: 40px;
+  background-color: #0064d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-butons-general a img {
+  width: 19px;
+}
+
+.container-butons-general a:hover {
+  background-color: #0065d9e5;
+}
+
+.benefits-financing {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item-financing {
+  background: linear-gradient(to Left, rgb(216, 216, 216), white);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.info-item-financing {
+  margin-left: 5%;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-item-financing h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 80%;
+}
+
+.info-item-financing h2 span {
+  color: #0065d9;
+}
+
+.info-item-financing p {
+  font-size: 1.1rem;
+  width: 80%;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.info-img-financing {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.info-img-financing .icon-check{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+}
+
+.info-img-financing .banner-check{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:30px;
+}

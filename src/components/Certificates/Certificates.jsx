@@ -8,7 +8,7 @@ import certicate5 from "../../assets/icons/LOGOS_RRJ-05.png";
 export default function Certificates() {
   return (
     <section className="certificate-container">
-      <h2>Certified Business</h2>
+      <h2>Certified Business:</h2>
       <section className="logo-certificate-container">
         <img className="certificate-logo" src={certicate1} alt="" />
         <img className="certificate-logo" src={certicate2} alt="" />

@@ -2,7 +2,9 @@ import "./ContactPage.css";
 import { Link } from "react-router-dom";
 import arrowRight from "../../assets/icons/arrow.svg";
 import Menu from "../../components/Menu/Menu";
+import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
+import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
 import phone from "../../assets/icons/phone-solid.svg";
@@ -25,12 +27,14 @@ export default function ContactPage() {
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">
-              <div className="header-contact-btn-cont">
-                <Link className="contact-button" to={"/service"}>
+              <Link to={"/service"} className="header-contact-btn-cont">
+                <div className="contact-button">
                   reserve
-                </Link>
-                <img src={arrowRight} alt="" />
-              </div>
+                </div>
+                <div className="cont-btn-arrow-home">
+                  <img src={arrowRight} alt="" />
+                </div>
+              </Link>
               <div className="home-social-links">
                 <a href="">
                   <img src={insta} alt="" />
@@ -41,13 +45,15 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          <img className="header-house-bg" src={bannerContact} alt="" />
-          <img className="header-mobile-bg" src={bannerContact} alt="" />
         </section>
-        <Menu />
-        <div className="bottom-benefits-container">
-          <Benefits />
+        <div className="aisde-menu-container">
+          <Menu />
+          <MenuResponsive />
         </div>
+        <Benefits />
+        <ResponsiveBenefits />
+        <img className="header-house-bg" src={bannerContact} alt="" />
+        <img className="header-mobile-bg" src={bannerContact} alt="" />
       </section>
       <section className="cont-general-contact">
         <section className="title-page-general">
@@ -95,9 +101,7 @@ export default function ContactPage() {
           <iframe
             className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6688147.48739467!2d-85.15449346741865!3d35.06431343291765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541fc4fc381a81%3A0xad3f30f5e922ae19!2sCarolina%20del%20Norte%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1709491925930!5m2!1ses!2ses"
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
       </section>

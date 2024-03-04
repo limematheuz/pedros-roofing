@@ -9,13 +9,21 @@ import arrow from "../../assets/icons/arrow.svg";
 import exteriorHouse from "../../assets/icons/exterior-house.svg";
 import interiorHouse from "../../assets/icons/interior-house.svg";
 import itemService from "../../assets/img/form-bg.jpg";
-import bannerService from "../../assets/img/bg-service.jpg";
+import houseBg from "../../assets/img/bg-service.jpg";
+import houseBgMobile from "../../assets/img/bg-service.jpg";
 import phone from "../../assets/icons/phone-solid.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import zoom from "../../assets/icons/zoom.svg";
 import Menu from "../../components/Menu/Menu";
+import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
+import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import Certificates from "../../components/Certificates/Certificates";
+import Footer from "../../components/Footer/Footer";
+
+
 
 export default function ServicesPage() {
   let container = useRef(null);
@@ -60,37 +68,35 @@ export default function ServicesPage() {
         <section className="header-container">
           <div className="header-title-container">
             <div className="info-home-title">
-              <h1>
-                certified roof
-                <br />
-                contractor
-              </h1>
+              <h1>certified roof contractor</h1>
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">
-              <div className="header-contact-btn-cont">
-                <Link className="contact-button" to={"/service"}>
-                  see services
-                </Link>
-                <img src={arrowRight} alt="" />
-              </div>
+              <Link to={"/contact"} className="header-contact-btn-cont">
+                <p className="contact-button">contact us</p>
+                <div className="cont-btn-arrow-home">
+                  <img src={arrowRight} alt="" />
+                </div>
+              </Link>
               <div className="home-social-links">
                 <a href="">
-                  <img src={insta} alt="" />
+                  <img src={insta} alt="icon-insta" />
                 </a>
                 <a href="">
-                  <img src={fb} alt="" />
+                  <img src={fb} alt="icon-fb" />
                 </a>
               </div>
             </div>
           </div>
-          <img className="header-house-bg" src={bannerService} alt="" />
-          <img className="header-mobile-bg" src={bannerService} alt="" />
         </section>
-        <Menu />
-        <div className="bottom-benefits-container">
-          <Benefits />
+        <div className="aisde-menu-container">
+          <Menu />
+          <MenuResponsive />
         </div>
+        <Benefits />
+        <ResponsiveBenefits />
+        <img className="header-house-bg" src={houseBg} alt="bg-page" />
+        <img className="header-mobile-bg" src={houseBgMobile} alt="bg-page" />
       </section>
       <section className="container-general">
         <section className="title-page-general">
@@ -132,9 +138,7 @@ export default function ServicesPage() {
               >
                 <div className="info-name-service">
                   <h4>{item?.name}</h4>
-                  <div className="arrow-cont">
-                    <img src={arrow} alt="icon-arrow-img" />
-                  </div>
+                  <img src={arrow} alt="icon-arrow-img" />
                 </div>
                 <img
                   src={item?.banner}
@@ -312,6 +316,9 @@ export default function ServicesPage() {
             </section>
           </section>
         )}
+        <Certificates/>
+        <ContactForm/>
+        <Footer/>
       </section>
     </main>
   );

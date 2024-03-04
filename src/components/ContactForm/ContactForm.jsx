@@ -54,47 +54,65 @@ function ContactForm() {
   return (
     <section className="contact-form-container">
       <div className="info-form-container">
-      <div className="contact-form-info">
-        <h3>contact</h3>
-        <h2>schedule a meeting</h2>
-        <p>
-          Contact us any time. We are available 24/7 via email or telephone.
-        </p>
-        <div className="form-social-icons">
-          <img src={phone} alt="" />
-          <img src={envelope} alt="" />
-          <img src={wpp} alt="" />
-        </div>
-      </div>
-      <div className="second-contact-form-info">
-        <form ref={formRef} onSubmit={onSubmit} className="form-container">
-          <label htmlFor="name">
-            <input type="text" placeholder="Name" id="name" name="name" autoComplete="name"/>
-            <div className="box-icon-form">
-              <img src={user} alt="" />
-            </div>
-          </label>
-          <label htmlFor="number">
-            <input type="number" placeholder="Phone" id="number" name="number" autoComplete="tel" />
-            <div className="box-icon-form">
-              <img src={phone} alt="" />
-            </div>
-          </label>
-          <label htmlFor="email">
-            <input type="email" placeholder="Email" id="email" name="email" autoComplete="email" />
-            <div className="box-icon-form">
-              <img src={envelope} alt="" />
-            </div>
-          </label>
-          <button type="submit">Reserve</button>
-        </form>
-        {isSuccess && (
-          <div className="success-message">
-            <img src={check} alt="" />
-            Form submitted successfully!
+        <div className="contact-form-info">
+          <h3>contact</h3>
+          <h2>schedule a meeting</h2>
+          <p>
+            Contact us any time. We are available 24/7 via email or telephone.
+          </p>
+          <div className="form-social-icons">
+            <img src={phone} alt="" />
+            <img src={envelope} alt="" />
+            <img src={wpp} alt="" />
           </div>
-        )}
-      </div>
+        </div>
+        <div className="second-contact-form-info">
+          <form ref={formRef} onSubmit={onSubmit} className="form-container">
+            <label htmlFor="name">
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                name="name"
+                autoComplete="name"
+              />
+              <div className="box-icon-form">
+                <img src={user} alt="" />
+              </div>
+            </label>
+            <label htmlFor="number">
+              <input
+                type="number"
+                placeholder="Phone"
+                id="number"
+                name="number"
+                autoComplete="tel"
+              />
+              <div className="box-icon-form">
+                <img src={phone} alt="" />
+              </div>
+            </label>
+            <label htmlFor="email">
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                autoComplete="email"
+              />
+              <div className="box-icon-form">
+                <img src={envelope} alt="" />
+              </div>
+            </label>
+            <button type="submit">Reserve</button>
+          </form>
+          {isSuccess && (
+            <div className="success-message">
+              <img src={check} alt="" />
+              Form submitted successfully!
+            </div>
+          )}
+        </div>
       </div>
       <img className="home-form-bg" src={formBg} alt="" />
     </section>

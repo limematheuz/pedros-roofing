@@ -2,7 +2,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     margin-top: 80px;
   }
@@ -13,15 +13,17 @@
     text-transform: uppercase;
     color: rgb(113, 113, 113);
     letter-spacing: 1px;
+    margin-left: 6%;
   }
   
   .logo-certificate-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 180px;
-    gap: 5%;
+    height: 160px;
+    gap: 3%;
+    margin-left:3%;
   }
   
   .certificate-logo {

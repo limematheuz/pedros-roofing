@@ -5,11 +5,9 @@
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  border: 1px solid;
   margin-top: 100px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.502);
-  border: 2px solid red;
 }
 
 .first-black-box {
@@ -65,7 +63,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid red;
 }
 
 .footer-services-info h4 {
@@ -96,7 +93,6 @@
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  border: 1px solid red;
 }
 
 .footer-first-column,
@@ -234,7 +230,6 @@
     margin-top: 100px;
     position: relative;
     background-color: rgba(0, 0, 0, 0.502);
-    border: 1px solid red;
   }
 
   .info-footer-container {
@@ -245,7 +240,6 @@
     align-items: center;
     flex-direction: column;
     gap: 0px;
-    border: 1px solid rgb(255, 255, 255);
   }
 
   .info-footer {
@@ -255,7 +249,6 @@
     justify-content: space-between;
     align-items: center;
     gap: 0px;
-    border: 1px solid rgb(255, 255, 255);
   }
 
   .footer-logo {
@@ -264,7 +257,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid rgb(255, 255, 255);
   }
 
 }

@@ -1,5 +1,4 @@
 import "./Benefits.css";
-
 import toolIcon from "../../assets/icons/blue-tool.svg";
 import smileIcon from "../../assets/icons/smile-figma.svg";
 import workerIcon from "../../assets/icons/worker-figma.svg";
@@ -7,40 +6,47 @@ import workerIcon from "../../assets/icons/worker-figma.svg";
 export default function Benefits() {
   return (
     <section className="benefits-container">
-      <div className="benefits-items-container">
-
-        <div className="benefitss-items">
-          <div className="first-item-column">
+      <section className="benefitss-items">
+        <div className="first-item-column">
+          <div className="box-benefits-home">
             <img src={toolIcon} alt="" />
-            <h4>120 +</h4>
           </div>
-          <div className="item-name">
-            <p>Services Realized</p>
-          </div>
+          <h4>120+</h4>
         </div>
-
-        <hr />
-        <div className="benefitss-items">
-          <div className="first-item-column">
+        <p className="item-name">
+          Services
+          <br />
+          Realized
+        </p>
+      </section>
+      <hr />
+      <section className="benefitss-items">
+        <div className="first-item-column">
+          <div className="box-benefits-home">
             <img src={smileIcon} alt="" />
-            <h4>99 %</h4>
           </div>
-          <div className="item-name">
-            <p>Happy Clients</p>
-          </div>
+          <h4>99%</h4>
         </div>
-
-        <hr />
-        <div className="benefitss-items">
-          <div className="first-item-column">
+        <p className="item-name">
+          Happy
+          <br />
+          Clients
+        </p>
+      </section>
+      <hr />
+      <section className="benefitss-items">
+        <div className="first-item-column">
+          <div className="box-benefits-home">
             <img src={workerIcon} alt="" />
-            <h4>40 +</h4>
           </div>
-          <div className="item-name">
-            <p>Team Work</p>
-          </div>
+          <h4>40+</h4>
         </div>
-      </div>
+        <p className="item-name">
+          Team
+          <br />
+          Work
+        </p>
+      </section>
     </section>
   );
 }

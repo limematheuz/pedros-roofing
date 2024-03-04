@@ -1,25 +1,30 @@
 import "./Menu.css";
 import { Link } from "react-router-dom";
-
-import house from "../../assets/icons/house-figma.svg"
-import tool from "../../assets/icons/white-tool.svg"
-import phone from "../../assets/icons/phone-solid.svg"
+import house from "../../assets/icons/house-figma.svg";
+import tool from "../../assets/icons/white-tool.svg";
+import phone from "../../assets/icons/phone-solid.svg";
 
 export default function MenuResponsive() {
   return (
     <section className="responsive-menu-container">
-      <div className="first-responsive-items">
-        <img src={house} alt="" />
-        <Link to={"/"} className="menu-responsive-btns">Home</Link>
-      </div>
-      <div className="second-responsive-items">
+      <Link to={"/"} className="first-responsive-items">
+        <img src={house} alt="icon-menu-responsive" />
+        <p className="menu-responsive-btns">
+          Home
+        </p>
+      </Link>
+      <Link  to={"/services"} className="first-responsive-items">
         <img src={tool} alt="" />
-        <Link to={"/services"} className="menu-responsive-btns">Services</Link>
-      </div>
-      <div className="third-responsive-items">
+        <p className="menu-responsive-btns">
+          Services
+        </p>
+      </Link>
+      <Link className="first-responsive-items">
         <img src={phone} alt="" />
-        <Link to={"/contact"} className="menu-responsive-btns">Contact</Link>
-      </div>
+        <p to={"/contact"} className="menu-responsive-btns">
+          Contact
+        </p>
+      </Link>
     </section>
   );
 }

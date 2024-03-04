@@ -20,46 +20,41 @@ export default function HomePage() {
   return (
     <main className="body-app-container">
       <section className="header-menu-container">
-        <section className="header-container">
-          <div className="header-title-container">
-            <div className="info-home-title">
-              <h1>
-                 pedro's remodeling & <br /> home improvements
-              </h1>
-              <h3>North Carolina, USA</h3>
-            </div>
-            <div className="home-btns">
-              <div className="header-contact-btn-cont">
-                <Link className="contact-button" to={"/contact"}>
-                  contact us
-                </Link>
+        <div className="header-title-container">
+          <div className="info-home-title">
+            <h1>
+              pedro's remodeling & home improvements
+            </h1>
+            <h3>North Carolina, USA</h3>
+          </div>
+          <div className="home-btns">
+            <Link to={"/contact"} className="header-contact-btn-cont">
+              <p className="contact-button">contact us</p>
+              <div className="cont-btn-arrow-home">
                 <img src={arrowRight} alt="" />
               </div>
-              <div className="home-social-links">
-                <a href="">
-                  <img src={insta} alt="" />
-                </a>
-                <a href="">
-                  <img src={fb} alt="" />
-                </a>
-              </div>
+            </Link>
+            <div className="home-social-links">
+              <a href="">
+                <img src={insta} alt="icon-insta" />
+              </a>
+              <a href="">
+                <img src={fb} alt="icon-fb" />
+              </a>
             </div>
           </div>
-          <img className="header-house-bg" src={houseBg} alt="" />
-          <img className="header-mobile-bg" src={houseBgMobile} alt="" />
-        </section>
+        </div>
         <div className="aisde-menu-container">
           <Menu />
-          <MenuResponsive/>
+          <MenuResponsive />
         </div>
-        <div></div>
-        <div className="bottom-benefits-container">
-          <Benefits />
-          <ResponsiveBenefits/>
-        </div>
+        <Benefits />
+        <ResponsiveBenefits />
+        <img className="header-house-bg" src={houseBg} alt="bg-page" />
+        <img className="header-mobile-bg" src={houseBgMobile} alt="bg-page" />
       </section>
       <OurStory />
-      <AdsBanner/>
+      <AdsBanner />
       <ServicesArea />
       <Certificates />
       <ContactForm />

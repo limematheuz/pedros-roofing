@@ -13,11 +13,9 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <span className="first-black-box"></span>
-
       <section className="footer-logo">
         <img src={whiteLogo} alt="" />
       </section>
-
       <section className="info-footer-container">
         <div className="info-footer">
           <div className="footer-services-info">

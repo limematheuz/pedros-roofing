@@ -9,7 +9,7 @@ export default function Menu() {
   return (
     <nav className="menu-container">
       <Link to={"/"} className="menu-logo">
-        <img src={whiteLogo} alt="" />
+        <img src={whiteLogo} alt="logo-home" />
       </Link>
       <div className="menu-links">
         <Link to={"/"} className="menu-link-item">

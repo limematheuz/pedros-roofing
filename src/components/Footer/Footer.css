@@ -177,6 +177,7 @@
   z-index: -3;
   position: absolute;
   object-fit: cover;
+  filter: grayscale();
 }
 
 @media (max-width: 1024px) {

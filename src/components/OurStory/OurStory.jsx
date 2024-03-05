@@ -1,6 +1,10 @@
 import "./OurStory.css";
 import React, { useRef } from "react";
 import cocheSlider from "../../assets/img/coche-slider.jpg";
+import houseSlider1 from "../../assets/img/slider-house.jpg";
+import houseSlider2 from "../../assets/img/slider-house-two.jpg";
+import houseSlider3 from "../../assets/img/casa-slider.jpg";
+
 import arrow from "../../assets/icons/arrow.svg";
 
 export default function OurStory() {
@@ -30,9 +34,9 @@ export default function OurStory() {
         <div className="our-story-slider-container" ref={sliderRef}>
           <div className="img-slider-container">
             <img className="ourStory-slider-img" src={cocheSlider} alt="" />
-            <img className="ourStory-slider-img" src={cocheSlider} alt="" />
-            <img className="ourStory-slider-img" src={cocheSlider} alt="" />
-            <img className="ourStory-slider-img" src={cocheSlider} alt="" />
+            <img className="ourStory-slider-img" src={houseSlider2} alt="" />
+            <img className="ourStory-slider-img" src={houseSlider1} alt="" />
+            <img className="ourStory-slider-img" src={houseSlider3} alt="" />
           </div>
         </div>
 

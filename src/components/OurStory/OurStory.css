@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 .cont-our-story-items {
@@ -96,12 +96,12 @@
 
 .our-story-btns {
   width: 10%;
-  height: 50px;
+  height: 46px;
   min-width: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #004FC6;
+  background-color: #0064d9;
   border: 2px solid #0085ff;
   border-radius: 36px;
 }
@@ -121,14 +121,14 @@
 }
 
 .our-story-btns img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 26px;
   background-color: #0065d900;
 }
 
 .our-story-second-info hr {
-  height: 80%;
-  width: 6px;
+  height: 60%;
+  width: 4px;
   border: none;
   background-color: #0085ff;
   border-radius: 4px;

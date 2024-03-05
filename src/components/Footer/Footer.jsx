@@ -20,13 +20,13 @@ export default function Footer() {
           </p>
           <div className="footer-social-info">
             <a href="https://" className="footer-social-items">
-              <img src={insta} alt="" />
+              <img src={insta} alt="insta-logo" />
             </a>
             <a  href="https://" className="footer-social-items">
-              <img src={fb} alt="" />
+              <img src={fb} alt="facebook-logo" />
             </a>
             <a  href="https://" className="footer-social-items">
-              <img src={linkedin} alt="" />
+              <img src={linkedin} alt="linkedin-logo" />
             </a>
           </div>
         </section>

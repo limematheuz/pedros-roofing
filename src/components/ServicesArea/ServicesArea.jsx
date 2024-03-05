@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import useFirestoreCollection from "../../useFirestoreCollection";
 import "./ServicesArea.css";
 import arrow from "../../assets/icons/arrow.svg";
@@ -76,7 +77,7 @@ export default function ServicesArea() {
           </section>
           <section ref={container} className="right-side">
             {data.map((item) => (
-              <div
+              <Link to={"/services"}
                 key={item.id}
                 onClick={() => handleItemClick(item)}
                 className={`slider-item ${
@@ -92,7 +93,7 @@ export default function ServicesArea() {
                   alt="img-service"
                   className="service-slider-img"
                 />
-              </div>
+              </Link>
             ))}
           </section>
         </section>

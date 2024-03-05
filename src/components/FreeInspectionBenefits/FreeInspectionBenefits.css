@@ -1,0 +1,46 @@
+.free-inspection-intro-container{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 80px 0; */
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards-free-intro{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.first-benefit-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.second-benefit-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.first-card-info{
+    width: 25%;
+    border: 1px solid red;
+    background-color: #0057BE;
+}
+
+.second-card-info{
+    width: 55%;
+    border: 1px solid red;
+    background-color: #0057BE;
+}

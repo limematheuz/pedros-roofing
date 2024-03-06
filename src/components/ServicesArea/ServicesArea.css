@@ -170,6 +170,7 @@
   position: relative;
   filter: grayscale(5);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .slider-item.active {

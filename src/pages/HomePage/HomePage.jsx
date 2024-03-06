@@ -12,9 +12,11 @@ import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import OurStory from "../../components/OurStory/OurStory";
 import AdsBanner from "../../components/AdsBanner/AdsBanner";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
+import Recomendations from "../../components/Recomendations/Recomendations";
 import Certificates from "../../components/Certificates/Certificates";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
+
 
 export default function HomePage() {
   return (
@@ -53,10 +55,11 @@ export default function HomePage() {
         <img className="header-house-bg" src={houseBg} alt="bg-page" />
         <img className="header-mobile-bg" src={houseBgMobile} alt="bg-page" />
       </section>
+      <Certificates />
       <OurStory />
       <AdsBanner />
       <ServicesArea />
-      <Certificates />
+      <Recomendations/>
       <ContactForm />
       <Footer />
     </main>

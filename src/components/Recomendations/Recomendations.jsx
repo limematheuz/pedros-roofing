@@ -44,7 +44,7 @@ export default function Recomendations() {
                 <img className="recomendations-slider-img" src={user1} alt="" />
                 <div className="info-recomendation-item">
                   <h6>Micheal Smith</h6>
-                  <p>Facebook</p>
+                  <p>Instagram</p>
                 </div>
               </div>
               <div className="social-icon-recomendations">
@@ -92,7 +92,7 @@ export default function Recomendations() {
                 <img className="recomendations-slider-img" src={user3} alt="" />
                 <div className="info-recomendation-item">
                   <h6>Sandra Olivares</h6>
-                  <p>Facebook</p>
+                  <p>Google</p>
                 </div>
               </div>
               <div className="social-icon-recomendations">

@@ -27,15 +27,22 @@
 }
 
 .menu-link-item {
-  color: #0064d9;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   padding: 9px 15px 4px 15px;
   border-radius: 50px;
   font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.menu-link-item:hover{
+  color: #0064d9;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .menu-icons {

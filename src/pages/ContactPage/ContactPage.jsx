@@ -8,8 +8,12 @@ import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
 import phone from "../../assets/icons/phone-solid.svg";
+import location from "../../assets/icons/location.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
 import bannerContact from "../../assets/img/bg-contact.jpg";
+import Footer from "../../components/Footer/Footer";
+import user from "../../assets/icons/user-regular.svg";
+import envelope from "../../assets/icons/envelope-regular.svg";
 
 export default function ContactPage() {
   return (
@@ -28,18 +32,22 @@ export default function ContactPage() {
             </div>
             <div className="home-btns">
               <Link to={"/service"} className="header-contact-btn-cont">
-                <div className="contact-button">
-                  reserve
-                </div>
+                <div className="contact-button">reserve</div>
                 <div className="cont-btn-arrow-home">
                   <img src={arrowRight} alt="" />
                 </div>
               </Link>
               <div className="home-social-links">
-                <a href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F" target="_blank">
+                <a
+                  href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+                  target="_blank"
+                >
                   <img src={insta} alt="" />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES" target="_blank">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                  target="_blank"
+                >
                   <img src={fb} alt="" />
                 </a>
               </div>
@@ -78,7 +86,7 @@ export default function ContactPage() {
             </div>
             <div className="channel-info">
               <div className="box-icon">
-                <img src={mail} alt="icon-cel" />
+                <img src={mail} alt="icon-mail" />
               </div>
               <div className="text-channel">
                 <h5>Email us</h5>
@@ -87,7 +95,7 @@ export default function ContactPage() {
             </div>
             <div className="channel-info">
               <div className="box-icon">
-                <img src={phone} alt="icon-cel" />
+                <img src={location} alt="icon-location" />
               </div>
               <div className="text-channel">
                 <h5>Our location</h5>
@@ -95,7 +103,47 @@ export default function ContactPage() {
               </div>
             </div>
           </section>
-          <section className="contact-form"></section>
+          <section className="contact-form">
+            <form className="form-container">
+              <label htmlFor="name">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="name"
+                  name="name"
+                  autoComplete="name"
+                />
+                <div className="box-icon-form">
+                  <img src={user} alt="" />
+                </div>
+              </label>
+              <label htmlFor="number">
+                <input
+                  type="number"
+                  placeholder="Phone"
+                  id="number"
+                  name="number"
+                  autoComplete="tel"
+                />
+                <div className="box-icon-form">
+                  <img src={phone} alt="" />
+                </div>
+              </label>
+              <label htmlFor="email">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  autoComplete="email"
+                />
+                <div className="box-icon-form">
+                  <img src={envelope} alt="" />
+                </div>
+              </label>
+              <button type="submit">Reserve</button>
+            </form>
+          </section>
         </section>
         <section className="maps-container">
           <iframe
@@ -105,6 +153,7 @@ export default function ContactPage() {
           ></iframe>
         </section>
       </section>
+      <Footer />
     </main>
   );
 }

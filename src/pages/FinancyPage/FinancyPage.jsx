@@ -39,10 +39,10 @@ export default function FinancyPage() {
                 </div>
               </Link>
               <div className="home-social-links">
-                <a href="">
+                <a href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F" target="_blank">
                   <img src={insta} alt="icon-insta" />
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES" target="_blank">
                   <img src={fb} alt="icon-fb" />
                 </a>
               </div>

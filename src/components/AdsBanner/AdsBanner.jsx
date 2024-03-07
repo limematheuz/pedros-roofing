@@ -47,10 +47,10 @@ export default function AdsBanner() {
                 <img src={arrow} alt="" /> 
               </div>
               <div className="social-banner-btns">
-                <a href="">
+                <a href="tel:9192791958">
                   <img src={phone} alt="" />
                 </a>
-                <a href="">
+                <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
                   <img src={wpp} alt="" />
                 </a>
               </div>
@@ -79,10 +79,10 @@ export default function AdsBanner() {
                 <img src={arrow} alt="" />
               </div>
               <div className="social-banner-btns">
-              <a href="">
+              <a href="tel:9192791958">
                   <img src={phone} alt="" />
                 </a>
-                <a href="">
+                <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
                   <img src={wpp} alt="" />
                 </a>
               </div>

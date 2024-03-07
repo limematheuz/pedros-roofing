@@ -1,7 +1,7 @@
 .free-inspection-intro-container {
   width: 100%;
   height: 650px;
-  margin: 80px 0 40px 0;
+  margin: 40px 0px 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,7 +137,20 @@
   }
 
   .second-card-info {
-    width: 35%;
+    width: 40%;
     height: 300px;
+  }
+
+  .limit-card-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .limit-card-container h3 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 }

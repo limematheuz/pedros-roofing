@@ -3,8 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 0px;
+  
 }
 
 .cont-our-story-items {
@@ -57,7 +56,7 @@
 
 .our-story-slider-container {
   width: 95%;
-  height: 400px;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,8 +89,9 @@
   width: 90%;
   height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 20px;
 }
 
 .our-story-btns {
@@ -109,15 +109,19 @@
 .our-story-btns button {
   width: 100%;
   height: 100%;
-  border-radius: 36px;
+  border-radius: 0px 36px 36px 0px ;
   background-color: #0065d900;
   border: none;
+  cursor: pointer;
 }
 
 .our-story-btns button:hover {
   height: 90%;
   background-color: #2f7dd6;
-  /* border-radius: 0 36px 36px 0; */
+}
+
+.our-story-btns button:first-child:hover {
+  border-radius: 36px 0px 0px 36px ;
 }
 
 .our-story-btns img {
@@ -135,7 +139,10 @@
 }
 
 .parraf-bottom {
-  width: 70%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .parraf-bottom p {

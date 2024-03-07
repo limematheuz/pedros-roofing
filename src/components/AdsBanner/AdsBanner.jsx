@@ -34,7 +34,7 @@ export default function AdsBanner() {
           onMouseEnter={handleFirstHover}
           onMouseLeave={handleFirstHover}
         >
-          <Link to={"/financing-page"} className="banner-items">
+          <Link to={"/financing-service"} className="banner-items">
             <span className="span-banner"></span>
             <div className="banner-title">
               <h3>financing service</h3>
@@ -42,7 +42,7 @@ export default function AdsBanner() {
             </div>
             <div className="links-banner-btns">
               <div className="main-button-banner">
-                <Link className="see-more-btn" to={"/financing-page"}>see more               
+                <Link className="see-more-btn" to={"/financing-service"}>see more               
                 </Link>
                 <img src={arrow} alt="" /> 
               </div>
@@ -58,7 +58,6 @@ export default function AdsBanner() {
             <img className="banner-img" src={financingBanner} alt="" />
           </Link>
         </section>
-
         <section
           className="second-card-container"
           style={{
@@ -68,7 +67,7 @@ export default function AdsBanner() {
           onMouseEnter={handleSecondHover}
           onMouseLeave={handleSecondHover}
         >
-          <Link to={"free-inspection"} className="banner-items">
+          <Link to={"/free-inspection"} className="banner-items">
             <span className="span-banner"></span>
             <div className="banner-title">
               <h3>get a free inspection</h3>
@@ -76,7 +75,7 @@ export default function AdsBanner() {
             </div>
             <div className="links-banner-btns">
               <div className="main-button-banner">
-                <Link className="see-more-btn" to={"/financing-page"}>see more</Link>
+                <Link className="see-more-btn" to={"/free-inspection"}>see more</Link>
                 <img src={arrow} alt="" />
               </div>
               <div className="social-banner-btns">

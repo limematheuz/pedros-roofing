@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
-import houseBg from "../../assets/img/bg-service.jpg";
-import houseBgMobile from "../../assets/img/bg-service.jpg";
+import houseBgMobile from "../../assets/img/bg-mobile-financing.jpg";
 import Menu from "../../components/Menu/Menu";
 import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
@@ -15,6 +14,7 @@ import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import check from "../../assets/icons/circle-check-regular.svg";
 import financingOne from "../../assets/img/financing-item-one.jpg";
+import bgFinancyBanner from "../../assets/img/financing-banner.jpg";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
 import OurStory from "../../components/OurStory/OurStory";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -55,7 +55,7 @@ export default function FinancyPage() {
         </div>
         <Benefits />
         <ResponsiveBenefits />
-        <img className="header-house-bg" src={houseBg} alt="bg-page" />
+        <img className="header-house-bg" src={bgFinancyBanner} alt="bg-page" />
         <img className="header-mobile-bg" src={houseBgMobile} alt="bg-page" />
       </section>
       <section className="container-general">

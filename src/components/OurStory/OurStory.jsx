@@ -39,14 +39,13 @@ export default function OurStory() {
             <img className="ourStory-slider-img" src={houseSlider3} alt="" />
           </div>
         </div>
-
         <div className="our-story-second-info">
           <div className="our-story-btns">
-            <button onClick={() => scroll(-1600)}>
+            <button onClick={() => scroll(-400)}>
               <img src={arrow} alt="" />
             </button>
             <hr />
-            <button onClick={() => scroll(1600)}>
+            <button onClick={() => scroll(400)}>
               <img className="arrow-right" src={arrow} alt="" />
             </button>
           </div>

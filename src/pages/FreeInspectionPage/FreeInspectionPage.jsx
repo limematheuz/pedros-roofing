@@ -1,7 +1,6 @@
 import "./FreeInspectionPage.css"
-
 import { Link } from "react-router-dom";
-import houseBg from "../../assets/img/main-house-bg.jpg";
+import houseBg from "../../assets/img/banner-inspection.jpg";
 import houseBgMobile from "../../assets/img/house-bg-mobile.png";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
@@ -10,7 +9,6 @@ import Menu from "../../components/Menu/Menu";
 import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
-
 import Certificates from "../../components/Certificates/Certificates";
 import FreeInspectionIntro from "../../components/FreeInspectionIntro/FreeInspectionIntro";
 import FreeInspectionBenefits from "../../components/FreeInspectionBenefits/FreeInspectionBenefits";

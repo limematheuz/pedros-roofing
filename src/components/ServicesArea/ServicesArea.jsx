@@ -19,11 +19,6 @@ export default function ServicesArea() {
     }
   };
 
-  useEffect(() => {
-    const defaultSelectedItem = data.find((item) => item.order === 1);
-    setSelectedItem(defaultSelectedItem);
-  }, [data]);
-
   if (loading) {
     return <p>ready</p>;
   }
@@ -84,6 +79,10 @@ export default function ServicesArea() {
             >
               <div className="info-name-service">
                 <h4>{item?.name}</h4>
+                <img src={arrow} alt="icon-arrow-img" />
+              </div>
+              <div className="inspection-free-slider">
+                <p>Free inspection!</p>
                 <img src={arrow} alt="icon-arrow-img" />
               </div>
               <img

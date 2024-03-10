@@ -11,6 +11,7 @@ import phone from "../../assets/icons/phone-solid.svg";
 import location from "../../assets/icons/location.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
 import bannerContact from "../../assets/img/bg-contact.jpg";
+import bannerContactMobile from "../../assets/img/main-contact-bg-mobile.jpg";
 import Footer from "../../components/Footer/Footer";
 import user from "../../assets/icons/user-regular.svg";
 import envelope from "../../assets/icons/envelope-regular.svg";
@@ -22,12 +23,9 @@ export default function ContactPage() {
         <section className="header-container">
           <div className="header-title-container">
             <div className="info-home-title">
-              <h1>
-                why wait?
-                <br />
-                call us today for
-                <br />a free inspection
-              </h1>
+              <h2>
+                why wait? call us today for a free inspection
+              </h2>
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">
@@ -61,7 +59,7 @@ export default function ContactPage() {
         <Benefits />
         <ResponsiveBenefits />
         <img className="header-house-bg" src={bannerContact} alt="" />
-        <img className="header-mobile-bg" src={bannerContact} alt="" />
+        <img className="header-mobile-bg" src={bannerContactMobile} alt="" />
       </section>
       <section className="cont-general-contact">
         <section className="title-page-general">

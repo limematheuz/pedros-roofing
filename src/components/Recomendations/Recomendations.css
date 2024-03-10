@@ -1,16 +1,8 @@
-.recomendations-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .cont-reco-items {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 40px;
 }
@@ -21,7 +13,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   padding-left: 5%;
 }
 
@@ -46,29 +38,34 @@
 }
 
 .recomendations-info p {
-  width: 60%;
+  width: 45%;
   max-width: 600px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.1;
 }
 
 .recomendations-slider-container {
-  width: 90%;
-  height: 300px;
+  width: 100%;
+  height: 250px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0%;
-  border-radius: 24px;
   overflow-x: scroll;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  gap: 60px;
+  gap: 30px;
+}
+
+.recomendations-slider-container .card-recomendations-container:first-child {
+  margin-left: 5%;
+}
+
+.recomendations-slider-container .card-recomendations-container:last-child {
+  margin-right: 25%;
 }
 
 .card-recomendations-container {
-  width: 100%;
   min-width: 400px;
   height: 100%;
   display: flex;
@@ -84,25 +81,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
 }
 
 .blue-box-reco-container {
-  width: 75%;
+  width: 55%;
   height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  border: 2px solid #0085ff;
+  border-bottom: 2px solid #0085ff;
+  border-right: 2px solid #0085ff;
   background-color: #0065d9bd;
   border-radius: 18px 0 24px 0;
+  gap: 15px;
 }
 
 .recomendations-slider-img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: 15px;
 }
 
 .info-recomendation-item {
@@ -110,91 +109,93 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .info-recomendation-item h6 {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .info-recomendation-item p {
   color: white;
   font-size: 1rem;
-}
-
-.social-icon-recomendations {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-icon-recomendations img {
-  width: 40px;
-  height: 40px;
-}
-
-.comment-recomendation-area {
-  width: 90%;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.comment-recomendation-area p {
-  color: white;
-  font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
+.social-icon-recomendations {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.comment-recomendation-area {
+  width: 85%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-recomendation-area p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.comment-recomendation-area img {
+  width: 35px;
+}
+
 .btns-container-recomendations {
-  width: 90%;
-  height: 200px;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-left: 5%;
 }
 
 .recomandations-btns {
-  width: 10%;
-  height: 46px;
-  min-width: 150px;
+  width: 100px;
+  height: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #0064d9;
-  border: 2px solid #0085ff;
+  background-color: #d90000;
+  border: 2px solid #ff2121;
   border-radius: 36px;
 }
 
 .recomandations-btns button {
   width: 100%;
   height: 100%;
-  border-radius: 36px;
+  border-radius: 50px 0px 0px 50px;
   background-color: #0065d900;
   border: none;
+  cursor: pointer;
 }
 
 .recomandations-btns button:hover {
-  height: 90%;
-  background-color: #2f7dd6;
+  background-color: #ff2121;
+}
+
+.recomandations-btns button:last-child:hover {
+  background-color: #ff2121;
+  border-radius: 0px 50px 50px 0px;
 }
 
 .recomandations-btns img {
-  width: 20px;
-  height: 26px;
-  background-color: #0065d900;
+  width: 14px;
 }
 
-.btns-container-recomendations hr {
+.recomandations-btns hr {
   height: 60%;
   width: 4px;
   border: none;
-  background-color: #0085ff;
+  background-color: #ff2121;
   border-radius: 4px;
 }
 
@@ -203,12 +204,6 @@
 }
 
 @media (max-width: 1024px) {
-  .recomendations-container {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 0px;
-  }
-
   .cont-reco-items {
     width: 100%;
   }
@@ -227,93 +222,93 @@
   }
 
   .recomendations-info p {
+    width: 60%;
+  }
+
+  .recomendations-slider-container {
+    width: 100%;
+    height: 280px;
+  }
+
+  .card-recomendations-container {
+    min-width: 360px;
+  }
+
+  .comment-recomendation-area {
+    width: 80%;
+  }
+
+  .blue-box-reco-container {
+    width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cont-reco-items {
+    margin-bottom: 80px;
+  }
+
+  .recomendations-info {
+    width: 90%;
+    padding-left: 7%;
+  }
+
+  .recomendations-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .recomendations-info h2 {
+    width: 80%;
+    font-size: 2.2rem;
+  }
+
+  .recomendations-info p {
     width: 80%;
   }
 
   .recomendations-slider-container {
-    width: 90%;
-    height: 340px;
-    gap: 20px;
+    width: 100%;
+    height: 42vh;
+  }
+
+  .blue-box-reco-container {
+    width: 75%;
   }
 
   .card-recomendations-container {
-    min-width: 350px;
+    min-width: 70%;
   }
 
-  .user-recomendations-info-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  .info-recomendation-item h6 {
+    font-size: 1rem;
+  }
+
+  .info-recomendation-item p {
+    font-size: 0.8rem;
+  }
+
+  .social-icon-recomendations {
+    width: 25px;
   }
 
   .comment-recomendation-area {
-    width: 90%;
-    height: 170px;
-    margin-bottom: 50px;
+    width: 80%;
   }
 
   .comment-recomendation-area p {
-    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .recomendations-slider-container .card-recomendations-container:first-child {
+    margin-left: 7%;
+  }
+
+  .recomendations-slider-container .card-recomendations-container:last-child {
+    margin-right: 7%;
+  }
+
+  .btns-container-recomendations {
+    margin-left: 7%;
   }
 }
-
-
-@media (max-width: 600px) {
-    .recomendations-container {
-      width: 100%;
-      margin-top: 40px;
-      margin-bottom: 0px;
-    }
-  
-    .cont-reco-items {
-      width: 100%;
-    }
-  
-    .recomendations-info {
-      width: 95%;
-    }
-  
-    .recomendations-info h3 {
-      width: 30%;
-    }
-  
-    .recomendations-info h2 {
-      width: 65%;
-      font-size: 2.6rem;
-    }
-  
-    .recomendations-info p {
-      width: 80%;
-    }
-  
-    .recomendations-slider-container {
-      width: 90%;
-      height: 400px;
-      gap: 20px;
-    }
-  
-    .card-recomendations-container {
-      min-width: 300px;
-    }
-  
-    .user-recomendations-info-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .comment-recomendation-area {
-      width: 90%;
-      height: 180px;
-      margin-bottom: 70px;
-    }
-  
-    .comment-recomendation-area p {
-        font-size: 1.2rem;
-      font-weight: 200;
-    }
-  }

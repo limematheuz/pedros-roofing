@@ -1,29 +1,22 @@
-.our-story-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 
 .cont-our-story-items {
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 40px;
 }
 
 .our-story-info {
-  width: 95%;
+  width: 70%;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 40px;
-  padding-left: 5%;
+  gap: 25px;
+  margin-bottom: 10px;
 }
 
 .our-story-info h3 {
@@ -49,66 +42,86 @@
 .our-story-info p {
   width: 60%;
   max-width: 600px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.1;
 }
 
-.our-story-slider-container {
-  width: 95%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 5%;
-  border-radius: 24px;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
+
 
 .img-slider-container {
   width: 100%;
-  height: 100%;
+  height: 45vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  border-radius: 24px;
+  gap: 30px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.img-slider-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+.img-slider-container .ourStory-slider-img:first-child{
+  margin-left:5%;
+}
+
+.img-slider-container .ourStory-slider-img:last-child{
+  margin-right:25%;
 }
 
 .ourStory-slider-img {
-  width: 600px;
-  min-width: 700px;
+  min-width: 600px;
   height: 100%;
   border-radius: 24px;
+  position: relative;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.ourStory-slider-img-bg{
+  min-width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 24px;
+  z-index: -2;
+  transition: transform 0.3s;
+  
+}
+
+.ourStory-slider-img:hover .ourStory-slider-img-bg {
+  transform: scale(1.1);
+}
+
+.ourStory-slider-img:hover .cont-zoom {
+  background-color: rgb(180, 0, 0);
+  border: 2px solid red;
 }
 
 .our-story-second-info {
-  width: 90%;
-  height: 200px;
+  margin-left: 5%;
+  width: 70%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .our-story-btns {
-  width: 10%;
-  height: 46px;
-  min-width: 150px;
+  width: 100px;
+  height: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #0064d9;
-  border: 2px solid #0085ff;
+  background-color: #d90000;
+  border: 2px solid #ff2121;
   border-radius: 36px;
 }
 
 .our-story-btns button {
   width: 100%;
-  height: 100%;
   border-radius: 0px 36px 36px 0px ;
   background-color: #0065d900;
   border: none;
@@ -116,8 +129,8 @@
 }
 
 .our-story-btns button:hover {
-  height: 90%;
-  background-color: #2f7dd6;
+  height: 100%;
+  background-color: #ff2121;
 }
 
 .our-story-btns button:first-child:hover {
@@ -125,31 +138,29 @@
 }
 
 .our-story-btns img {
-  width: 14px;
-  background-color: #0065d900;
+  width: 12px;
 }
 
 .our-story-second-info hr {
   height: 60%;
   width: 4px;
   border: none;
-  background-color: #0085ff;
+  background-color: #ff2121;
   border-radius: 4px;
 }
 
 .parraf-bottom {
-  width: 65%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .parraf-bottom p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
   line-height: 1.1;
   max-width: 800px;
-  width: 75%;
   text-align: end;
 }
 
@@ -160,18 +171,8 @@
 
 
 @media (max-width: 1024px) {
-  .our-story-container {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .cont-our-story-items {
-    width: 100%;
-  }
-
   .our-story-info {
-    width: 95%;
+    width: 90%;
   }
 
   .our-story-info h3 {
@@ -187,49 +188,29 @@
     width: 80%;
   }
 
-  .our-story-slider-container {
-    width: 95%;
-    height: 400px;
-  }
 
   .ourStory-slider-img {
-    width: 600px;
-    min-width: 420px;
+    min-width: 500px;
   }
 
   .our-story-second-info {
-    gap: 20px;
-  }
-
-  .our-story-btns {
-    min-width: 160px;
+    width: 90%;
   }
 
   .parraf-bottom {
-    width: 80%;
+    width: 60%;
+  }
+
+  .img-slider-container .ourStory-slider-img:last-child{
+    margin-right:5%;
   }
 }
 
 @media (max-width: 600px) {
-  .our-story-container {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 60px;
-  }
-
-  .cont-our-story-items {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-  }
 
   .our-story-info {
-    width: 90%;
-    gap: 40px;
-    padding-left: 5%;
+    margin-left: 7%;
+    width: 85%;
   }
 
   .our-story-info h3 {
@@ -238,77 +219,57 @@
   }
 
   .our-story-info h2 {
-    width: 60%;
+    width: 85%;
     font-size: 2.2rem;
   }
 
   .our-story-info p {
-    width: 100%;
-    max-width: 600px;
+    width: 90%;
     font-size: 1rem;
   }
 
-  .our-story-slider-container {
-    width: 90%;
-    height: 320px;
-    padding-left: 5%;
-  }
 
   .img-slider-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    height: 50vh;
+  }
+
+  .img-slider-container .ourStory-slider-img:first-child{
+    margin-left:7%;
+  }
+
+  .img-slider-container .ourStory-slider-img:last-child{
+    margin-right:8%;
   }
 
   .ourStory-slider-img {
-    width: 260px;
-    min-width: 250px;
+    min-width: 65%;
     object-position: left;
   }
 
   .our-story-second-info {
-    width: 90%;
-    height: 240px;
+    width: 85%;
     flex-direction: column;
-    padding-left: 5%;
+    margin-left:7%;
   }
 
   .our-story-btns {
-    width: 20%;
-    min-height: 50px;
-    min-width: 150px;
-  }
-
-  .our-story-btns button {
-    width: 100%;
-    height: 100%;
+    width: 130px;
   }
 
   .our-story-btns img {
-    width: 30px;
-    height: 30px;
+    width: 15px;
   }
 
   .our-story-second-info {
     gap: 40px;
   }
 
-  .our-story-second-info hr {
-    height: 80%;
-    min-width: 2px;
-  }
-
   .parraf-bottom {
-    width: 100%;
+    width: 90%;
   }
   
   .parraf-bottom p {
     font-size: 1rem;
-    max-width: 400px;
     text-align: start;
   }
-
-  
 }

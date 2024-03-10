@@ -19,9 +19,9 @@ export default function MenuResponsive() {
           Services
         </p>
       </Link>
-      <Link className="first-responsive-items">
+      <Link to={"/contact"} className="first-responsive-items">
         <img src={phone} alt="" />
-        <p to={"/contact"} className="menu-responsive-btns">
+        <p  className="menu-responsive-btns">
           Contact
         </p>
       </Link>

@@ -36,11 +36,13 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  border: 2px solid transparent;
 }
 
 .menu-link-item:hover{
-  color: #0064d9;
-  background-color: white;
+  color: white;
+  background-color: rgb(180, 0, 0);
+  border: 2px solid red;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -67,7 +69,12 @@
 }
 
 .menu-icons a:hover {
-  border: 2px solid white;
+  background-color: rgb(180, 0, 0);
+  border: 2px solid red;
+}
+
+.responsive-menu-container{
+  display: block;
 }
 
 @media (max-width: 1024px) {
@@ -104,9 +111,9 @@
   }
 
   .first-responsive-items:hover {
-    border: 2px solid white;
+    background-color: rgb(180, 0, 0);
+    border: 2px solid red;
     border-radius: 30px;
-    color: white;
   }
 
   .menu-responsive-btns {
@@ -143,9 +150,8 @@
   }
 
   .first-responsive-items:hover {
-    border: 2px solid white;
+    border: 2px solid red;
     border-radius: 25px;
-    color: white;
   }
 
   .menu-responsive-btns {

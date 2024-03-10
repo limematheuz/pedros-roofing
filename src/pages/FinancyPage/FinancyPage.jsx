@@ -20,15 +20,14 @@ import OurStory from "../../components/OurStory/OurStory";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
-
 export default function FinancyPage() {
   return (
-    <main className="body-app-container">
+    <section className="body-app-container">
       <section className="header-menu-container">
         <section className="header-container">
           <div className="header-title-container">
             <div className="info-home-title">
-              <h1>Finance your roof plan starting $99</h1>
+              <h2>Finance your roof plan starting $99</h2>
               <h3>solutions for your home</h3>
             </div>
             <div className="home-btns">
@@ -39,10 +38,16 @@ export default function FinancyPage() {
                 </div>
               </Link>
               <div className="home-social-links">
-                <a href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F" target="_blank">
+                <a
+                  href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+                  target="_blank"
+                >
                   <img src={insta} alt="icon-insta" />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES" target="_blank">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                  target="_blank"
+                >
                   <img src={fb} alt="icon-fb" />
                 </a>
               </div>
@@ -73,23 +78,27 @@ export default function FinancyPage() {
             beyond to meet our clients’ needs. For quality roofing from trusted
             professionals, we are the team for the job.
           </p>
-          <div className="container-butons-general">
+          <section className="container-butons-general">
             <button>Reserve Financing</button>
-            <a href="">
-              <img src={phone} alt="icon-phone" />
-            </a>
-            <a href="">
-              <img src={mail} alt="icon-phone" />
-            </a>
-            <a href="">
-              <img src={wpp} alt="icon-phone" />
-            </a>
-          </div>
+            <div className="btns-financing-flex">
+              <a href="">
+                <img src={phone} alt="icon-phone" />
+              </a>
+              <a href="">
+                <img src={mail} alt="icon-phone" />
+              </a>
+              <a href="">
+                <img src={wpp} alt="icon-phone" />
+              </a>
+            </div>
+          </section>
         </section>
         <section className="benefits-financing">
           <div className="item-financing">
             <section className="info-item-financing">
-              <h2><span>Flexible</span> financing options</h2>
+              <h2>
+                <span>Flexible</span> financing options
+              </h2>
               <p>
                 we offer tailored financing solutions to suit your needs,
                 whether it's roofing, siding, gutters, painting, or other
@@ -98,12 +107,18 @@ export default function FinancyPage() {
             </section>
             <section className="info-img-financing">
               <img src={check} className="icon-check" alt="icon-check" />
-              <img src={financingOne} className="banner-check" alt="img-financing" />
+              <img
+                src={financingOne}
+                className="banner-check"
+                alt="img-financing"
+              />
             </section>
           </div>
           <div className="item-financing">
             <section className="info-item-financing">
-              <h2><span>Costumized</span> plans</h2>
+              <h2>
+                <span>Costumized</span> plans
+              </h2>
               <p>
                 we offer tailored financing solutions to suit your needs,
                 whether it's roofing, siding, gutters, painting, or other
@@ -112,12 +127,18 @@ export default function FinancyPage() {
             </section>
             <section className="info-img-financing">
               <img src={check} className="icon-check" alt="icon-check" />
-              <img src={financingOne} className="banner-check" alt="img-financing" />
+              <img
+                src={financingOne}
+                className="banner-check"
+                alt="img-financing"
+              />
             </section>
           </div>
           <div className="item-financing">
             <section className="info-item-financing">
-              <h2><span>Convenient</span> paiment options</h2>
+              <h2>
+                <span>Convenient</span> paiment options
+              </h2>
               <p>
                 we offer tailored financing solutions to suit your needs,
                 whether it's roofing, siding, gutters, painting, or other
@@ -126,15 +147,19 @@ export default function FinancyPage() {
             </section>
             <section className="info-img-financing">
               <img src={check} className="icon-check" alt="icon-check" />
-              <img src={financingOne} className="banner-check" alt="img-financing" />
+              <img
+                src={financingOne}
+                className="banner-check"
+                alt="img-financing"
+              />
             </section>
           </div>
         </section>
-        <ServicesArea/>
-        <OurStory/>
-        <ContactForm/>
-        <Footer/>
+        <ServicesArea />
+        <OurStory />
+        <ContactForm />
+        <Footer />
       </section>
-    </main>
+    </section>
   );
 }

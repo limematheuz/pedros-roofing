@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import { Link } from "react-router-dom";
 import houseBg from "../../assets/img/main-house-bg.jpg";
-import houseBgMobile from "../../assets/img/house-bg-mobile.png";
+import houseBgMobile from "../../assets/img/main-house-bg-mobile.jpg";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";

@@ -14,7 +14,6 @@ function ContactForm() {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    // Validar que todos los campos obligatorios estén llenos
     const name = event.target.elements.name.value;
     const number = event.target.elements.number.value;
     const email = event.target.elements.email.value;
@@ -55,11 +54,13 @@ function ContactForm() {
     <section className="contact-form-container">
       <div className="info-form-container">
         <div className="contact-form-info">
-          <h3>contact</h3>
-          <h2>schedule a meeting</h2>
-          <p>
-            Contact us any time. We are available 24/7 via email or telephone.
-          </p>
+          <div className="info-box-form">
+            <h3>contact</h3>
+            <h2>schedule a meeting</h2>
+            <p>
+              Contact us any time. We are available 24/7 via email or telephone.
+            </p>
+          </div>
           <div className="form-social-icons">
             <img src={phone} alt="" />
             <img src={envelope} alt="" />
@@ -77,7 +78,7 @@ function ContactForm() {
                 autoComplete="name"
               />
               <div className="box-icon-form">
-                <img src={user} alt="" />
+                <img src={user} alt="icon-form" />
               </div>
             </label>
             <label htmlFor="number">

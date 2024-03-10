@@ -9,88 +9,69 @@ import wpp from "../../assets/icons/blue-whatsapp.svg";
 import arrow from "../../assets/icons/arrow.svg";
 
 export default function AdsBanner() {
-  const [isFirstHovered, setIsFirstHovered] = useState(false);
-  const [isSecondHovered, setIsSecondHovered] = useState(false);
-
-  const handleFirstHover = () => {
-    setIsFirstHovered(!isFirstHovered);
-    setIsSecondHovered(false);
-  };
-
-  const handleSecondHover = () => {
-    setIsSecondHovered(!isSecondHovered);
-    setIsFirstHovered(false);
-  };
 
   return (
-    <main className="ads-banner-container">
-      <section className="cards-container">
-        <section
-          className="first-card-container"
-          style={{
-            width: isFirstHovered ? "60%" : "35%",
-            transition: "width 0.5s"
-          }}
-          onMouseEnter={handleFirstHover}
-          onMouseLeave={handleFirstHover}
+    <section  className="cards-container">
+      <section className="cont-ad-animation">
+        <Link
+          to={"/financing-service"}
+          className="banner-items-left"
         >
-          <Link to={"/financing-service"} className="banner-items">
-            <span className="span-banner"></span>
-            <div className="banner-title">
-              <h3>financing service</h3>
-              <p>The leading local roofing company.</p>
-            </div>
-            <div className="links-banner-btns">
-              <div className="main-button-banner">
-                <Link className="see-more-btn" to={"/financing-service"}>see more               
-                </Link>
-                <img src={arrow} alt="" /> 
+          <div className="banner-title">
+            <h3>financing service</h3>
+            <p>The leading local roofing company.</p>
+          </div>
+          <div className="links-banner-btns">
+            <Link to={"/financing-service"} className="main-button-banner">
+              <p className="see-more-btn">see more</p>
+              <div className="icon-btn-banner-ad">
+                <img src={arrow} alt="icon-btn" />
               </div>
-              <div className="social-banner-btns">
-                <a href="tel:9192791958">
-                  <img src={phone} alt="" />
-                </a>
-                <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
-                  <img src={wpp} alt="" />
-                </a>
-              </div>
-            </div>
-            <img className="banner-img" src={financingBanner} alt="" />
-          </Link>
-        </section>
-        <section
-          className="second-card-container"
-          style={{
-            width: isSecondHovered ? "60%" : "35%",
-            transition: "width 0.5s"
-          }}
-          onMouseEnter={handleSecondHover}
-          onMouseLeave={handleSecondHover}
-        >
-          <Link to={"/free-inspection"} className="banner-items">
-            <span className="span-banner"></span>
-            <div className="banner-title">
-              <h3>get a free inspection</h3>
-              <p>The leading local roofing company.</p>
-            </div>
-            <div className="links-banner-btns">
-              <div className="main-button-banner">
-                <Link className="see-more-btn" to={"/free-inspection"}>see more</Link>
-                <img src={arrow} alt="" />
-              </div>
-              <div className="social-banner-btns">
+            </Link>
+            <div className="social-banner-btns-left">
               <a href="tel:9192791958">
-                  <img src={phone} alt="" />
-                </a>
-                <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
-                  <img src={wpp} alt="" />
-                </a>
-              </div>
+                <img src={phone} alt="" />
+              </a>
+              <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
+                <img src={wpp} alt="" />
+              </a>
             </div>
-            <img className="banner-img" src={freeBanner} alt="" />
-          </Link>
-        </section>
+          </div>
+          <span className="span-banner-left"></span>
+          <img
+            className="banner-img-home"
+            src={financingBanner}
+            alt="image-ad"
+          />
+        </Link>
+        <Link
+          to={"/free-inspection"}
+          className="banner-items-right"
+        >
+          <div className="banner-title">
+            <h3>free inspection</h3>
+            <p>The leading local roofing company.</p>
+          </div>
+          <div className="links-banner-btns">
+            <Link to={"/free-inspection"} className="main-button-banner">
+              <p className="see-more-btn">see more</p>
+              <div className="icon-btn-banner-ad">
+                <img src={arrow} alt="icon-btn" />
+              </div>
+            </Link>
+            <div className="social-banner-btns">
+              <a href="tel:9192791958">
+                <img src={phone} alt="" />
+              </a>
+              <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
+                <img src={wpp} alt="" />
+              </a>
+            </div>
+          </div>
+          <span className="span-banner"></span>
+          <img className="banner-img-home" src={freeBanner} alt="" />
+        </Link>
       </section>
-    </main>
+    </section>
   );
 }

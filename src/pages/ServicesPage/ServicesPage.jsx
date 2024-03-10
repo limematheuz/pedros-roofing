@@ -10,7 +10,7 @@ import exteriorHouse from "../../assets/icons/exterior-house.svg";
 import interiorHouse from "../../assets/icons/interior-house.svg";
 import itemService from "../../assets/img/form-bg.jpg";
 import houseBg from "../../assets/img/bg-service.jpg";
-import houseBgMobile from "../../assets/img/bg-service.jpg";
+import houseBgMobile from "../../assets/img/main-service-bg-mobile.jpg";
 import phone from "../../assets/icons/phone-solid.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
@@ -68,7 +68,7 @@ export default function ServicesPage() {
         <section className="header-container">
           <div className="header-title-container">
             <div className="info-home-title">
-              <h1>certified roof contractor</h1>
+              <h2>certified roof contractor</h2>
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">

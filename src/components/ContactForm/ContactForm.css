@@ -1,91 +1,92 @@
 .contact-form-container {
-  width: 80%;
-  height: 800px;
+  width: 70%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0065d9b5;
+  background-color: #0065d9da;
   border-radius: 0 24px 24px 0;
   border-top: 2px solid #0085ff;
   margin-top: 80px;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .info-form-container{
-  width: 100%;
+  width: 90%;
   height: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 5% 0 5%;
 }
 
 .contact-form-info {
-  width: 50%;
-  height: 100%;
+  width: 55%;
+  height: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  gap: 20px;
+}
 
+.info-box-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
 }
 
 .contact-form-info h3 {
   width: 80%;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
   color: white;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .contact-form-info h2 {
-  width: 60%;
-  font-size: 3rem;
+  width: 65%;
+  font-size: 2.6rem;
+  letter-spacing: 2px;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
 }
 
 .contact-form-info p {
-  width: 80%;
+  width: 70%;
   font-size: 1.4rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: white;
 }
 
 .form-social-icons {
-  width: 40%;
-  height: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 25px;
-  margin-top: 40px;
 }
 
 .form-social-icons img {
   width: 30px;
-  height: 30px;
 }
 
 .second-contact-form-info {
   width: 45%;
-  max-height: 500px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   border-radius: 24px;
-  background-color: rgba(0, 0, 0, 0.715);
+  background-color: rgba(0, 0, 0, 0.637);
   position: relative;
 }
 
 .form-container {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -96,7 +97,7 @@
 
 .form-container label {
   width: 80%;
-  height: 60px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,49 +117,50 @@
 }
 
 .form-container input::placeholder {
-
   text-align: start;
-
   padding-left: 20px;
   color: white;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
 }
 
 .form-container button {
-  width: 30%;
-  height: 50px;
-  font-size: 1rem;
+  padding: 0px 20px 0px 20px;
+  height: 45px;
+  font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
   background-color: rgba(255, 255, 255, 0.701);
   border: 2px solid #ffffff;
   border-radius: 36px;
+  cursor: pointer;
+}
+
+.form-container button:hover{
+  background-color: white;
 }
 
 .box-icon-form {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  margin-left: 80%;
+  right: 20px;
   position: absolute;
 }
 
 .box-icon-form img {
-  width: 25px;
+  width: 20px;
 }
 
 .home-form-bg {
-  width: 80%;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
   border-radius: 0 24px 24px 0;
-  filter: grayscale();
+  filter: grayscale(1);
 }
 
 .success-message{
@@ -187,11 +189,7 @@
 @media (max-width: 1024px) {
   .contact-form-container {
     width: 100%;
-    height: 850px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 800px;
     border-radius: 0px;
     margin-bottom: 0px;
   } 
@@ -208,31 +206,32 @@
   .contact-form-info {
     width: 100%;
     height: 40%;
-    max-height: 400px;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
   }
 
-  .contact-form-info h3 {
+  .info-box-form{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-box-form h3 {
     width: 100%;
     font-size: 1.4rem;
     text-align: center;
   }
   
-  .contact-form-info h2 {
+  .info-box-form h2 {
     width: 100%;
     font-size: 2.4rem;
     text-align: center;
   }
   
-  .contact-form-info p {
-    width: 60%;
-    font-size: 1.2rem;
+  .info-box-form p {
+    width: 80%;
     text-align: center;
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: 1px;
   }
 
   .form-social-icons {
@@ -243,73 +242,34 @@
   }
 
   .second-contact-form-info {
-    width: 60%;
+    width: 55%;
     height: 60%;
-    max-height: 400px;
-  }
-
-  .form-container {
-    width: 100%;
-    gap: 30px;
-  }
-
-  .form-container label {
-    width: 70%;
-    height: 50px;
-  }
-
-  .home-form-bg {
-    width: 100%;
-    height: 850px;
-    border-radius: 0px;
-    filter: grayscale();
   }
 }
 
 @media (max-width: 600px){
   .contact-form-container {
     width: 100%;
-    height: 700px;
-    justify-content: center;
-    flex-direction: column;
+    height: 750px;
     border-radius: 36px;
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: 80px;
-    border: 0px solid #0085ff;
+    border: none;
   } 
 
   .info-form-container{
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
+    justify-content: space-between;
   }
 
   .contact-form-info {
     width: 80%;
     height: 50%;
-    max-height: 300px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .contact-form-info h3 {
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: start;
-    
   }
   
   .contact-form-info h2 {
-    width: 100%;
     font-size: 2.2rem;
-    text-align: start;
-    
   }
   
   .contact-form-info p {
@@ -318,44 +278,24 @@
     font-weight: 300;
     line-height: 1.1;
     letter-spacing: 1px;
-    text-align: start;
-  }
-
-  .form-social-icons {
-    width: 100%;
-    height: 60px;
-    justify-content: flex-start;
-    margin-top: 0px;
   }
 
   .second-contact-form-info {
     width: 100%;
     height: 50%;
-    min-height: 400px;
-    margin-right: 0%;
     border-radius: 36px;
-  }
-
-  .form-container {
-    width: 100%;
-    height: 100%;
-    
   }
 
   .form-container label {
     height: 50px;
-    width: 70%;
+    width: 75%;
   }
 
   .form-container button {
-    width: 40%;
-    height: 50px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .home-form-bg {
-    width: 100%;
-    height: 700px;
     border-radius: 36px;
   }
 }

@@ -19,7 +19,7 @@ export default function AdsBanner() {
         >
           <div className="banner-title">
             <h3>financing service</h3>
-            <p>The leading local roofing company.</p>
+            <p>Remodel any part of your house with a financing plan.</p>
           </div>
           <div className="links-banner-btns">
             <Link to={"/financing-service"} className="main-button-banner">
@@ -50,7 +50,7 @@ export default function AdsBanner() {
         >
           <div className="banner-title">
             <h3>free inspection</h3>
-            <p>The leading local roofing company.</p>
+            <p>Complete the inspection form and book it instantly.</p>
           </div>
           <div className="links-banner-btns">
             <Link to={"/free-inspection"} className="main-button-banner">

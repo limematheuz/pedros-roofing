@@ -62,12 +62,7 @@ export default function HomePage() {
             INSURANCE?
           </h2>
           <p>
-            The leading local roofing company. We provide a complete range of
-            services defined by quality, innovation, and expertise. With years
-            of experience, we’ve developed a strong reputation for our masterful
-            craftsmanship and committed customer service, always going above and
-            beyond to meet our clients’ needs. For quality roofing from trusted
-            professionals, we are the team for the job.
+          We are experts working with claims insurance. Contact us to book a visit to inspect the damage. one call is everything!
           </p>
           <section className="container-butons-general">
             <button>Free inspection</button>

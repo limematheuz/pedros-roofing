@@ -12,6 +12,8 @@ import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import check from "../../assets/icons/circle-check-regular.svg";
 import financingOne from "../../assets/img/financing-item-one.jpg";
+import financingTwo from "../../assets/img/financing-item-two.jpg";
+import financingTre from "../../assets/img/financing-item-tre.jpg";
 import bgFinancyBanner from "../../assets/img/financing-banner.jpg";
 import ServicesArea from "../../components/ServicesArea/ServicesArea";
 import OurStory from "../../components/OurStory/OurStory";
@@ -65,12 +67,7 @@ export default function FinancyPage() {
             <span>solutions</span> for your home
           </h2>
           <p>
-            The leading local roofing company. We provide a complete range of
-            services defined by quality, innovation, and expertise. With years
-            of experience, we’ve developed a strong reputation for our masterful
-            craftsmanship and committed customer service, always going above and
-            beyond to meet our clients’ needs. For quality roofing from trusted
-            professionals, we are the team for the job.
+          Don't let finances hold back your dreams. With Pedro´s Remodeling, you can confidently pursue your home or business improvements
           </p>
           <section className="container-butons-general">
             <button>Reserve Financing</button>
@@ -94,7 +91,7 @@ export default function FinancyPage() {
                 <span>Flexible</span> financing options
               </h2>
               <p>
-                we offer tailored financing solutions to suit your needs,
+                We offer tailored financing solutions to suit your needs,
                 whether it's roofing, siding, gutters, painting, or other
                 projects.
               </p>
@@ -114,15 +111,15 @@ export default function FinancyPage() {
                 <span>Costumized</span> plans
               </h2>
               <p>
-                we offer tailored financing solutions to suit your needs,
-                whether it's roofing, siding, gutters, painting, or other
-                projects.
+                Our team is dedicated to finding the right financial plan for
+                you, ensuring your project gets underway smoothly and fits your
+                budget.
               </p>
             </section>
             <section className="info-img-financing">
               <img src={check} className="icon-check" alt="icon-check" />
               <img
-                src={financingOne}
+                src={financingTwo}
                 className="banner-check"
                 alt="img-financing"
               />
@@ -134,15 +131,14 @@ export default function FinancyPage() {
                 <span>Convenient</span> paiment options
               </h2>
               <p>
-                we offer tailored financing solutions to suit your needs,
-                whether it's roofing, siding, gutters, painting, or other
-                projects.
+                Start your project today with our accessible financing options
+                and pay in installments that match your lifestyle.
               </p>
             </section>
             <section className="info-img-financing">
               <img src={check} className="icon-check" alt="icon-check" />
               <img
-                src={financingOne}
+                src={financingTre}
                 className="banner-check"
                 alt="img-financing"
               />

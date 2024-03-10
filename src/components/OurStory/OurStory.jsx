@@ -35,25 +35,41 @@ export default function OurStory() {
           <div className="cont-zoom">
             <img src={zoom} alt="icon-zoom" />
           </div>
-          <img className="ourStory-slider-img-bg" src={cocheSlider} alt="img-benefits" />
+          <img
+            className="ourStory-slider-img-bg"
+            src={cocheSlider}
+            alt="img-benefits"
+          />
         </section>
-        <section className="ourStory-slider-img" >
+        <section className="ourStory-slider-img">
           <div className="cont-zoom">
             <img src={zoom} alt="icon-zoom" />
           </div>
-          <img  className="ourStory-slider-img-bg" src={houseSlider2} alt="img-benefits"/>
+          <img
+            className="ourStory-slider-img-bg"
+            src={houseSlider2}
+            alt="img-benefits"
+          />
         </section>
-        <section  className="ourStory-slider-img" >
+        <section className="ourStory-slider-img">
           <div className="cont-zoom">
             <img src={zoom} alt="icon-zoom" />
           </div>
-          <img className="ourStory-slider-img-bg" src={houseSlider1} alt="img-benefits" />
+          <img
+            className="ourStory-slider-img-bg"
+            src={houseSlider1}
+            alt="img-benefits"
+          />
         </section>
-        <section  className="ourStory-slider-img" >
+        <section className="ourStory-slider-img">
           <div className="cont-zoom">
             <img src={zoom} alt="icon-zoom" />
           </div>
-          <img className="ourStory-slider-img-bg" src={houseSlider3} alt="img-benefits" />
+          <img
+            className="ourStory-slider-img-bg"
+            src={houseSlider3}
+            alt="img-benefits"
+          />
         </section>
       </div>
       <div className="our-story-second-info">
@@ -68,12 +84,10 @@ export default function OurStory() {
         </div>
         <div className="parraf-bottom">
           <p>
-            The leading local roofing company. We provide a complete range of
-            services defined by quality, innovation, and expertise. With years
-            of experience, we’ve developed a strong reputation for our masterful
-            craftsmanship and committed customer service, always going above and
-            beyond to meet our clients’ needs. For quality roofing from trusted
-            professionals, we are the team for the job.
+            Professional, dependable, affordable why wait? If you need quality
+            work from a qualified roofer, we are the company to call. We’ve
+            helped countless clients keep their property protected while saving
+            time and money. We know we can do the same for you too.
           </p>
         </div>
       </div>

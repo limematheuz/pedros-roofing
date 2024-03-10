@@ -21,15 +21,12 @@ import ContactForm from "../../components/ContactForm/ContactForm";
 import Certificates from "../../components/Certificates/Certificates";
 import Footer from "../../components/Footer/Footer";
 
-
-
 export default function ServicesPage() {
   let container = useRef(null);
   const { data, loading, error } = useFirestoreCollection("categories");
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
   const [filterActive, setFilterActive] = useState(false);
-  
 
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
@@ -87,10 +84,16 @@ export default function ServicesPage() {
                 </div>
               </Link>
               <div className="home-social-links">
-                <a href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F" target="_blank">
+                <a
+                  href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+                  target="_blank"
+                >
                   <img src={insta} alt="icon-insta" />
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES" target="_blank">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                  target="_blank"
+                >
                   <img src={fb} alt="icon-fb" />
                 </a>
               </div>
@@ -112,11 +115,25 @@ export default function ServicesPage() {
         <section className="section-slider-action">
           <section className="part-left">
             <div className="section-categorie">
-              <button className={filterActive ? "section-categorie-button" : "active-filter-button"}  onClick={resetFilter}>
+              <button
+                className={
+                  filterActive
+                    ? "section-categorie-button"
+                    : "active-filter-button"
+                }
+                onClick={resetFilter}
+              >
                 <img src={exteriorHouse} alt="icon-house" />
                 exteriors
               </button>
-              <button className={filterActive ? "active-filter-button-two" : "section-categorie-button-two"}  onClick={filterInterior}>
+              <button
+                className={
+                  filterActive
+                    ? "active-filter-button-two"
+                    : "section-categorie-button-two"
+                }
+                onClick={filterInterior}
+              >
                 <img src={interiorHouse} alt="icon-house" />
                 interiors
               </button>
@@ -132,27 +149,27 @@ export default function ServicesPage() {
             </div>
           </section>
           <section ref={container} className="part-right">
-            {data.map((item) => (
+            {data.map((item) =>
               (filterActive && item.sector === "interior") || !filterActive ? (
-              <div
-                key={item.id}
-                onClick={() => handleItemClick(item)}
-                className={`item-slider ${
-                  selectedItem === item ? "active" : ""
-                }`}
-              >
-                <div className="info-name-service">
-                  <h4>{item?.name}</h4>
-                  <img src={arrow} alt="icon-arrow-img" />
+                <div
+                  key={item.id}
+                  onClick={() => handleItemClick(item)}
+                  className={`item-slider ${
+                    selectedItem === item ? "active" : ""
+                  }`}
+                >
+                  <div className="info-name-service">
+                    <h4>{item?.name}</h4>
+                    <img src={arrow} alt="icon-arrow-img" />
+                  </div>
+                  <img
+                    src={item?.banner}
+                    alt="img-service"
+                    className="img-bg-service"
+                  />
                 </div>
-                <img
-                  src={item?.banner}
-                  alt="img-service"
-                  className="img-bg-service"
-                />
-              </div>
               ) : null
-            ))}
+            )}
           </section>
         </section>
         {selectedItem && (
@@ -186,41 +203,18 @@ export default function ServicesPage() {
             </div>
             <section className="all-content-service">
               <div className="info-text">
-                <p>
-                  The leading local roofing company. We provide a complete range
-                  of services defined by quality, innovation, and expertise.
-                  With years of experience, we’ve developed a strong reputation
-                  for our masterful craftsmanship and committed customer
-                  service, always going above and beyond to meet our clients’
-                  needs. For quality roofing from trusted professionals, we are
-                  the team for the job.
-                </p>
-                <h5>all types of residential roofing</h5>
-                <p>
-                  We are true roofing professionals with expertise in all types
-                  of roofing systems, maintenance and repair. Whether you are
-                  looking for built up roofing, low sloped roofing, modified
-                  bitumen, single ply, EPDM, PVC or TPO, we stand behind every
-                  job we do, making sure that our clients are completely
-                  satisfied with the workmanship and quality that we provide.
-                  Our goal is 100% satisfaction from the start of a job to its
-                  finish.
-                </p>
-                <p>
-                  Built Up: coal tar pitch or asphalt waterproofing between
-                  plies of reinforcing felt. Low Sloped Roofing: We can help you
-                  with the selection of roof deck type from the thousands of
-                  available configurations and insulation for your application.
-                  Modified Bitumen: Premanufactured membranes that come in
-                  roles, these modified hybrid built up systems can be applied
-                  in a variety of ways. Single Ply: Made from a variety of
-                  polymer plastics and rubbers. EPDM: Large sheets of ethylene
-                  propylene diene monomer available in black, used to insulate a
-                  roof, this material can be held in place in a variety of ways.
-                  PVC: Polyvinyl chloride sheets that are mechanically fastened
-                  to the roof deck, available in white or tan. TPO:
-                  Fleece-backed sheet membrane that can be reinforced.
-                </p>
+                <p>{selectedItem?.parrafOne}</p>
+                <h5>{selectedItem?.subtitle}</h5>
+                <p>{selectedItem?.parrafTwo}</p>
+                {Array.isArray(selectedItem?.parrafTre) ? (
+                  <ul className="service-parraf-three">
+                    {selectedItem.parrafTre.map((instruccion, index) => (
+                      <li key={index}>{instruccion}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{selectedItem?.parrafTre}</p>
+                )}
               </div>
               <div className="info-img">
                 <section className="img-item">
@@ -228,7 +222,7 @@ export default function ServicesPage() {
                     <img src={zoom} alt="icon-zoom" />
                   </div>
                   <img
-                    src={itemService}
+                    src={selectedItem?.servicesOne}
                     alt="img-service"
                     className="img-bg-service"
                   />
@@ -238,7 +232,7 @@ export default function ServicesPage() {
                     <img src={zoom} alt="icon-zoom" />
                   </div>
                   <img
-                    src={itemService}
+                    src={selectedItem?.servicesTwo}
                     alt="img-service"
                     className="img-bg-service"
                   />
@@ -248,7 +242,7 @@ export default function ServicesPage() {
                     <img src={zoom} alt="icon-zoom" />
                   </div>
                   <img
-                    src={itemService}
+                    src={selectedItem?.servicesTre}
                     alt="img-service"
                     className="img-bg-service"
                   />
@@ -256,59 +250,40 @@ export default function ServicesPage() {
               </div>
             </section>
             <section className="article-responsive">
-              <p>
-                The leading local roofing company. We provide a complete range
-                of services defined by quality, innovation, and expertise. With
-                years of experience, we’ve developed a strong reputation for our
-                masterful craftsmanship and committed customer service, always
-                going above and beyond to meet our clients’ needs. For quality
-                roofing from trusted professionals, we are the team for the job.
-              </p>
-              <h5>all types of residential roofing</h5>
+              <p>{selectedItem?.parrafOne}</p>
+              <h5>{selectedItem?.subtitle}</h5>
               <section className="img-item">
                 <div className="cont-zoom">
                   <img src={zoom} alt="icon-zoom" />
                 </div>
                 <img
-                  src={itemService}
+                  src={selectedItem?.servicesOne}
                   alt="img-service"
                   className="img-bg-service"
                 />
               </section>
               <p>
-                We are true roofing professionals with expertise in all types of
-                roofing systems, maintenance and repair. Whether you are looking
-                for built up roofing, low sloped roofing, modified bitumen,
-                single ply, EPDM, PVC or TPO, we stand behind every job we do,
-                making sure that our clients are completely satisfied with the
-                workmanship and quality that we provide. Our goal is 100%
-                satisfaction from the start of a job to its finish.
+              {selectedItem?.parrafTwo}
               </p>
               <section className="img-item">
                 <div className="cont-zoom">
                   <img src={zoom} alt="icon-zoom" />
                 </div>
                 <img
-                  src={itemService}
+                  src={selectedItem?.servicesTwo}
                   alt="img-service"
                   className="img-bg-service"
                 />
               </section>
-              <p>
-                Built Up: coal tar pitch or asphalt waterproofing between plies
-                of reinforcing felt. Low Sloped Roofing: We can help you with
-                the selection of roof deck type from the thousands of available
-                configurations and insulation for your application. Modified
-                Bitumen: Premanufactured membranes that come in roles, these
-                modified hybrid built up systems can be applied in a variety of
-                ways. Single Ply: Made from a variety of polymer plastics and
-                rubbers. EPDM: Large sheets of ethylene propylene diene monomer
-                available in black, used to insulate a roof, this material can
-                be held in place in a variety of ways. PVC: Polyvinyl chloride
-                sheets that are mechanically fastened to the roof deck,
-                available in white or tan. TPO: Fleece-backed sheet membrane
-                that can be reinforced.
-              </p>
+              {Array.isArray(selectedItem?.parrafTre) ? (
+                  <ul className="box-lista-service">
+                    {selectedItem.parrafTre.map((instruccion, index) => (
+                      <li key={index}>{instruccion}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>{selectedItem?.parrafTre}</p>
+                )}
               <section className="img-item">
                 <div className="cont-zoom">
                   <img src={zoom} alt="icon-zoom" />
@@ -322,9 +297,9 @@ export default function ServicesPage() {
             </section>
           </section>
         )}
-        <Certificates/>
-        <ContactForm/>
-        <Footer/>
+        <Certificates />
+        <ContactForm />
+        <Footer />
       </section>
     </main>
   );

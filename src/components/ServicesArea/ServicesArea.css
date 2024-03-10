@@ -32,6 +32,8 @@
   
 }
 
+
+
 .slider-title-general h2 {
   width: 40%;
   max-width: 400px;
@@ -95,7 +97,6 @@
 }
 
 .service-slider-categorie {
-  border: 2px solid #0064d9;
   width: 100%;
   height: 170px;
   display: flex;
@@ -105,7 +106,7 @@
   border-radius: 20px;
 }
 
-.service-slider-categorie button {
+.section-categorie-button {
   height: 50%;
   width: 100%;
   display: flex;
@@ -122,8 +123,56 @@
   gap: 10px;
 }
 
-.service-slider-categorie button:last-child {
+.active-filter-button {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid red;
+  background-color: rgb(180, 0, 0);
+  border-radius: 15px 15px 0px 0px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+
+.section-categorie-button-two {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+  background-color: #0064d9;
   border-radius: 0px 0px 15px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.active-filter-button-two {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid red;
+  background-color: rgb(180, 0, 0);
+  border-radius: 0px 0px 15px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  gap: 10px;
 }
 
 .service-slider-categorie button img {
@@ -262,20 +311,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-  }
-
-  .service-slider-categorie button {
-    height: 100%;
-    width: 50%;
-    flex-direction: row;
-    border: none;
-    background-color: #0064d9;
-    border-radius: 15px 0px 0px 15px;
-    color: white;
-  }
-
-  .service-slider-categorie button:last-child {
-    border-radius: 0px 15px 15px 0px;
   }
 
   .service-slider-categorie button img {

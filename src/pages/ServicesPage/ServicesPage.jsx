@@ -15,8 +15,6 @@ import phone from "../../assets/icons/phone-solid.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import zoom from "../../assets/icons/zoom.svg";
-import Menu from "../../components/Menu/Menu";
-import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -30,6 +28,8 @@ export default function ServicesPage() {
   const { data, loading, error } = useFirestoreCollection("categories");
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
+  const [filterActive, setFilterActive] = useState(false);
+  
 
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
@@ -62,6 +62,14 @@ export default function ServicesPage() {
     }
   };
 
+  const filterInterior = () => {
+    setFilterActive(true);
+  };
+
+  const resetFilter = () => {
+    setFilterActive(false);
+  };
+
   return (
     <main className="body-app-container">
       <section className="header-menu-container">
@@ -89,10 +97,6 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-        <div className="aisde-menu-container">
-          <Menu />
-          <MenuResponsive />
-        </div>
         <Benefits />
         <ResponsiveBenefits />
         <img className="header-house-bg" src={houseBg} alt="bg-page" />
@@ -108,11 +112,11 @@ export default function ServicesPage() {
         <section className="section-slider-action">
           <section className="part-left">
             <div className="section-categorie">
-              <button>
+              <button className={filterActive ? "section-categorie-button" : "active-filter-button"}  onClick={resetFilter}>
                 <img src={exteriorHouse} alt="icon-house" />
                 exteriors
               </button>
-              <button>
+              <button className={filterActive ? "active-filter-button-two" : "section-categorie-button-two"}  onClick={filterInterior}>
                 <img src={interiorHouse} alt="icon-house" />
                 interiors
               </button>
@@ -129,6 +133,7 @@ export default function ServicesPage() {
           </section>
           <section ref={container} className="part-right">
             {data.map((item) => (
+              (filterActive && item.sector === "interior") || !filterActive ? (
               <div
                 key={item.id}
                 onClick={() => handleItemClick(item)}
@@ -146,6 +151,7 @@ export default function ServicesPage() {
                   className="img-bg-service"
                 />
               </div>
+              ) : null
             ))}
           </section>
         </section>

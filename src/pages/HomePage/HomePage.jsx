@@ -5,8 +5,6 @@ import houseBgMobile from "../../assets/img/main-house-bg-mobile.jpg";
 import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
-import Menu from "../../components/Menu/Menu";
-import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import OurStory from "../../components/OurStory/OurStory";
@@ -17,16 +15,13 @@ import Certificates from "../../components/Certificates/Certificates";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Footer from "../../components/Footer/Footer";
 
-
 export default function HomePage() {
   return (
     <main className="body-app-container">
       <section className="header-menu-container">
         <div className="header-title-container">
           <div className="info-home-title">
-            <h1>
-              pedro's remodeling & home improvements
-            </h1>
+            <h1>pedro's remodeling & home improvements</h1>
             <h3>North Carolina, USA</h3>
           </div>
           <div className="home-btns">
@@ -37,18 +32,20 @@ export default function HomePage() {
               </div>
             </Link>
             <div className="home-social-links">
-              <a href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F" target="_blank">
+              <a
+                href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+                target="_blank"
+              >
                 <img src={insta} alt="icon-insta" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES" target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                target="_blank"
+              >
                 <img src={fb} alt="icon-fb" />
               </a>
             </div>
           </div>
-        </div>
-        <div className="aisde-menu-container">
-          <Menu />
-          <MenuResponsive />
         </div>
         <Benefits />
         <ResponsiveBenefits />
@@ -59,7 +56,7 @@ export default function HomePage() {
       <OurStory />
       <AdsBanner />
       <ServicesArea />
-      <Recomendations/>
+      <Recomendations />
       <ContactForm />
       <Footer />
     </main>

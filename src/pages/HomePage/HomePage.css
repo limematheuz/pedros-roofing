@@ -149,14 +149,6 @@
   display: none;
 }
 
-.aisde-menu-container {
-  position: fixed;
-  right: 0;
-  width: 20%;
-  height: 100vh;
-  z-index: 9;
-}
-
 
 @media (max-width:1024px) {
   .header-title-container {
@@ -179,15 +171,6 @@
     font-size: 1.4rem;
   }
 
-  .aisde-menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-  }
 }
 
 @media (max-width:600px){
@@ -241,10 +224,6 @@
 
   .header-house-bg{
     display: none;
-  }
-
-  .aisde-menu-container {
-    height: 12vh;
   }
   
   .header-contact-btn-cont .contact-button {

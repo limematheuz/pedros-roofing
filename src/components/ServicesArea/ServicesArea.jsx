@@ -12,6 +12,7 @@ export default function ServicesArea() {
   const { data, loading, error } = useFirestoreCollection("categories");
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
+  const [filterActive, setFilterActive] = useState(false);
 
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
@@ -39,6 +40,14 @@ export default function ServicesArea() {
     }
   };
 
+  const filterInterior = () => {
+    setFilterActive(true);
+  };
+
+  const resetFilter = () => {
+    setFilterActive(false);
+  };
+
   return (
     <section className="services-slider-container">
       <section className="slider-title-general">
@@ -50,11 +59,11 @@ export default function ServicesArea() {
       <section className="section-slider-container">
         <section className="left-side">
           <div className="service-slider-categorie">
-            <button>
+            <button  className={filterActive ? "section-categorie-button" : "active-filter-button"} onClick={resetFilter}>
               <img src={exteriorHouse} alt="icon-house" />
               exteriors
             </button>
-            <button>
+            <button  className={filterActive ? "active-filter-button-two" : "section-categorie-button-two"} onClick={filterInterior}>
               <img src={interiorHouse} alt="icon-house" />
               interiors
             </button>
@@ -71,6 +80,7 @@ export default function ServicesArea() {
         </section>
         <section ref={container} className="right-side">
           {data.map((item) => (
+            (filterActive && item.sector === "interior") || !filterActive ? (
             <Link
               to={"/services"}
               key={item.id}
@@ -91,6 +101,7 @@ export default function ServicesArea() {
                 className="service-slider-img"
               />
             </Link>
+            ) : null
           ))}
         </section>
       </section>

@@ -1,8 +1,6 @@
 import "./ContactPage.css";
 import { Link } from "react-router-dom";
 import arrowRight from "../../assets/icons/arrow.svg";
-import Menu from "../../components/Menu/Menu";
-import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import insta from "../../assets/icons/instagram.svg";
@@ -52,10 +50,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-        <div className="aisde-menu-container">
-          <Menu />
-          <MenuResponsive />
-        </div>
         <Benefits />
         <ResponsiveBenefits />
         <img className="header-house-bg" src={bannerContact} alt="" />

@@ -4,8 +4,6 @@ import arrowRight from "../../assets/icons/arrow.svg";
 import insta from "../../assets/icons/instagram.svg";
 import fb from "../../assets/icons/facebook.svg";
 import houseBgMobile from "../../assets/img/bg-mobile-financing.jpg";
-import Menu from "../../components/Menu/Menu";
-import MenuResponsive from "../../components/Menu/MenuResponsive";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import Certificates from "../../components/Certificates/Certificates";
@@ -54,10 +52,6 @@ export default function FinancyPage() {
             </div>
           </div>
         </section>
-        <div className="aisde-menu-container">
-          <Menu />
-          <MenuResponsive />
-        </div>
         <Benefits />
         <ResponsiveBenefits />
         <img className="header-house-bg" src={bgFinancyBanner} alt="bg-page" />

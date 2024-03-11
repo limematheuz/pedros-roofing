@@ -16,12 +16,22 @@
   margin-bottom: 70px;
 }
 
-
 .header-title-container {
   width: 50%;
   position: absolute;
   top: 40px;
   left: 30px;
+  animation: titleHome 1s ease-in-out;
+}
+
+@keyframes titleHome {
+  from {
+    transform: translateX(-70px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
 
 .info-home-title {
@@ -78,13 +88,13 @@
   border-radius: 50px;
   text-decoration: none;
   gap: 10px;
-  border:2px solid red;
+  border: 2px solid red;
 }
 
-.header-contact-btn-cont:hover{
+.header-contact-btn-cont:hover {
   background-color: red;
 
-  .contact-button{
+  .contact-button {
     color: white;
   }
 }
@@ -107,7 +117,7 @@
   background-color: #0064d9;
 }
 
-.cont-btn-arrow-home img{
+.cont-btn-arrow-home img {
   width: 10px;
   transform: rotate(180deg);
 }
@@ -130,11 +140,11 @@
   border: 2px solid red;
 }
 
-.home-social-links a img{
-  width:20px;
+.home-social-links a img {
+  width: 20px;
 }
 
-.home-social-links a:hover{
+.home-social-links a:hover {
   background-color: red;
 }
 
@@ -145,12 +155,11 @@
   z-index: -1;
 }
 
-.header-mobile-bg{
+.header-mobile-bg {
   display: none;
 }
 
-
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .header-title-container {
     width: 80%;
   }
@@ -170,10 +179,9 @@
   .info-home-title h3 {
     font-size: 1.4rem;
   }
-
 }
 
-@media (max-width:600px){
+@media (max-width: 600px) {
   .header-menu-container {
     width: 100%;
     height: 100vh;
@@ -201,20 +209,20 @@
     text-transform: uppercase;
   }
 
-  .info-home-title h2{
+  .info-home-title h2 {
     width: 80%;
     font-size: 1.9rem;
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   .info-home-title h3 {
     width: 100%;
     color: white;
     font-size: 1.1rem;
   }
 
-  .header-mobile-bg{
+  .header-mobile-bg {
     display: block;
     width: 100%;
     height: 100%;
@@ -222,16 +230,16 @@
     z-index: -1;
   }
 
-  .header-house-bg{
+  .header-house-bg {
     display: none;
   }
-  
+
   .header-contact-btn-cont .contact-button {
     font-size: 1.1rem;
     margin-bottom: -5px;
   }
-  
-  .cont-btn-arrow-home img{
+
+  .cont-btn-arrow-home img {
     width: 10px;
   }
 
@@ -240,5 +248,4 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
-
 }

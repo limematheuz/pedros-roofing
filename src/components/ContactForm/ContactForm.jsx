@@ -62,9 +62,21 @@ function ContactForm() {
             </p>
           </div>
           <div className="form-social-icons">
-            <img src={phone} alt="" />
-            <img src={envelope} alt="" />
-            <img src={wpp} alt="" />
+            <a href="tel:5025454375" target="_blank">
+              <img src={phone} alt="icon-cel" />
+            </a>
+            <a
+              href="mailto:rrjconstructionremodeling@gmail.com"
+              target="_blank"
+            >
+              <img src={envelope} alt="icon-mail" />
+            </a>
+            <a
+              href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+              target="_blank"
+            >
+              <img src={wpp} alt="icon-wss" />
+            </a>
           </div>
         </div>
         <div className="second-contact-form-info">

@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import houseBg from "../../assets/img/main-house-bg.jpg";
 import houseBgMobile from "../../assets/img/main-house-bg-mobile.jpg";
 import arrowRight from "../../assets/icons/arrow.svg";
-import insta from "../../assets/icons/instagram.svg";
-import fb from "../../assets/icons/facebook.svg";
+import phone from "../../assets/icons/phone-solid.svg";
+import mail from "../../assets/icons/envelope-regular.svg";
+import wpp from "../../assets/icons/whatsapp.svg";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import OurStory from "../../components/OurStory/OurStory";
@@ -32,17 +33,20 @@ export default function HomePage() {
               </div>
             </Link>
             <div className="home-social-links">
-              <a
-                href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
-                target="_blank"
-              >
-                <img src={insta} alt="icon-insta" />
+              <a href="tel:5025454375" target="_blank">
+                <img src={phone} alt="icon-insta" />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                href="mailto:rrjconstructionremodeling@gmail.com"
                 target="_blank"
               >
-                <img src={fb} alt="icon-fb" />
+                <img src={mail} alt="icon-fb" />
+              </a>
+              <a
+                href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                target="_blank"
+              >
+                <img src={wpp} alt="icon-fb" />
               </a>
             </div>
           </div>

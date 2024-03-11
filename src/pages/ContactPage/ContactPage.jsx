@@ -8,6 +8,7 @@ import fb from "../../assets/icons/facebook.svg";
 import phone from "../../assets/icons/phone-solid.svg";
 import location from "../../assets/icons/location.svg";
 import mail from "../../assets/icons/envelope-regular.svg";
+import wpp from "../../assets/icons/whatsapp.svg";
 import bannerContact from "../../assets/img/bg-contact.jpg";
 import bannerContactMobile from "../../assets/img/main-contact-bg-mobile.jpg";
 import Footer from "../../components/Footer/Footer";
@@ -21,9 +22,7 @@ export default function ContactPage() {
         <section className="header-container">
           <div className="header-title-container">
             <div className="info-home-title">
-              <h2>
-                why wait? call us today for a free inspection
-              </h2>
+              <h2>why wait? call us today for a free inspection</h2>
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">
@@ -34,17 +33,20 @@ export default function ContactPage() {
                 </div>
               </Link>
               <div className="home-social-links">
-                <a
-                  href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
-                  target="_blank"
-                >
-                  <img src={insta} alt="" />
+                <a href="tel:5025454375" target="_blank">
+                  <img src={phone} alt="icon-insta" />
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                  href="mailto:rrjconstructionremodeling@gmail.com"
                   target="_blank"
                 >
-                  <img src={fb} alt="" />
+                  <img src={mail} alt="icon-fb" />
+                </a>
+                <a
+                  href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                  target="_blank"
+                >
+                  <img src={wpp} alt="icon-fb" />
                 </a>
               </div>
             </div>

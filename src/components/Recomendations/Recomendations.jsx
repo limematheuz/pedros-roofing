@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./Recomendations.css";
-
+import { Link } from "react-router-dom";
 import user1 from "../../assets/img/user1.jpg";
 import user2 from "../../assets/img/user2.jpg";
 import user3 from "../../assets/img/user3.jpg";
@@ -35,7 +35,7 @@ export default function Recomendations() {
         </p>
       </div>
       <section className="recomendations-slider-container" ref={sliderRef}>
-        <div className="card-recomendations-container">
+        <Link target="_blank" to={"https://www.google.com/search?sca_esv=9cbc8786b516d4ed&sxsrf=ACQVn0-1a8EtlYi8A6o-KPhvuh5Dr0Ph2A:1710118613807&q=Pedro%27s+Remodeling+%26+Home+Improvements+INC&si=AKbGX_pmKbKbTIqdneq6jZwxZ7IuiRvFUMzIgXBBBifuXyB2JgVX6pvSvo964DuRjEc2hGRwricaBRBShCFVxLCtu1Emqa-NleE4BbvvwEH7zg2jNkL8_IxZWYCQyxqfCmH6qvBr4EpBVzb_jE5ZFBJWrZ5_P-VcbwI95hRHgDwjg3y9h2JbAp2qJw_yNav-6CbrOl8Tg9qegzerHqjuOh9f7ygZZiTnjozo2rAJH0ZTvbFCECeZWQI4vCZrXinqTo09w4HQXphN_-UYTC0IW4tBpooEGakBP3pfnUZPjfPexmfuRZlsrwg%3D&sa=X&ved=2ahUKEwiArf-jgOuEAxXK7LsIHb_0DlkQ6RN6BAguEAE&biw=1920&bih=919&dpr=1"} className="card-recomendations-container">
           <div className="user-recomendations-info-container">
             <div className="blue-box-reco-container">
               <img className="recomendations-slider-img" src={user1} alt="" />
@@ -58,8 +58,8 @@ export default function Recomendations() {
             </p>
             <img src={comillas} alt="comillas" />
           </div>
-        </div>
-        <div className="card-recomendations-container">
+        </Link>
+        <Link  target="_blank" to={"https://www.google.com/search?sca_esv=9cbc8786b516d4ed&sxsrf=ACQVn0-1a8EtlYi8A6o-KPhvuh5Dr0Ph2A:1710118613807&q=Pedro%27s+Remodeling+%26+Home+Improvements+INC&si=AKbGX_pmKbKbTIqdneq6jZwxZ7IuiRvFUMzIgXBBBifuXyB2JgVX6pvSvo964DuRjEc2hGRwricaBRBShCFVxLCtu1Emqa-NleE4BbvvwEH7zg2jNkL8_IxZWYCQyxqfCmH6qvBr4EpBVzb_jE5ZFBJWrZ5_P-VcbwI95hRHgDwjg3y9h2JbAp2qJw_yNav-6CbrOl8Tg9qegzerHqjuOh9f7ygZZiTnjozo2rAJH0ZTvbFCECeZWQI4vCZrXinqTo09w4HQXphN_-UYTC0IW4tBpooEGakBP3pfnUZPjfPexmfuRZlsrwg%3D&sa=X&ved=2ahUKEwiArf-jgOuEAxXK7LsIHb_0DlkQ6RN6BAguEAE&biw=1920&bih=919&dpr=1"}  className="card-recomendations-container">
           <div className="user-recomendations-info-container">
             <div className="blue-box-reco-container">
               <img className="recomendations-slider-img" src={user2} alt="" />
@@ -82,8 +82,8 @@ export default function Recomendations() {
             </p>
             <img src={comillas} alt="comillas" />
           </div>
-        </div>
-        <div className="card-recomendations-container">
+        </Link>
+        <Link  target="_blank" to={"https://www.google.com/search?sca_esv=9cbc8786b516d4ed&sxsrf=ACQVn0-1a8EtlYi8A6o-KPhvuh5Dr0Ph2A:1710118613807&q=Pedro%27s+Remodeling+%26+Home+Improvements+INC&si=AKbGX_pmKbKbTIqdneq6jZwxZ7IuiRvFUMzIgXBBBifuXyB2JgVX6pvSvo964DuRjEc2hGRwricaBRBShCFVxLCtu1Emqa-NleE4BbvvwEH7zg2jNkL8_IxZWYCQyxqfCmH6qvBr4EpBVzb_jE5ZFBJWrZ5_P-VcbwI95hRHgDwjg3y9h2JbAp2qJw_yNav-6CbrOl8Tg9qegzerHqjuOh9f7ygZZiTnjozo2rAJH0ZTvbFCECeZWQI4vCZrXinqTo09w4HQXphN_-UYTC0IW4tBpooEGakBP3pfnUZPjfPexmfuRZlsrwg%3D&sa=X&ved=2ahUKEwiArf-jgOuEAxXK7LsIHb_0DlkQ6RN6BAguEAE&biw=1920&bih=919&dpr=1"}  className="card-recomendations-container">
           <div className="user-recomendations-info-container">
             <div className="blue-box-reco-container">
               <img className="recomendations-slider-img" src={user3} alt="" />
@@ -106,8 +106,8 @@ export default function Recomendations() {
             </p>
             <img src={comillas} alt="comillas" />
           </div>
-        </div>
-        <div className="card-recomendations-container">
+        </Link>
+        <Link  target="_blank" to={"https://www.google.com/search?sca_esv=9cbc8786b516d4ed&sxsrf=ACQVn0-1a8EtlYi8A6o-KPhvuh5Dr0Ph2A:1710118613807&q=Pedro%27s+Remodeling+%26+Home+Improvements+INC&si=AKbGX_pmKbKbTIqdneq6jZwxZ7IuiRvFUMzIgXBBBifuXyB2JgVX6pvSvo964DuRjEc2hGRwricaBRBShCFVxLCtu1Emqa-NleE4BbvvwEH7zg2jNkL8_IxZWYCQyxqfCmH6qvBr4EpBVzb_jE5ZFBJWrZ5_P-VcbwI95hRHgDwjg3y9h2JbAp2qJw_yNav-6CbrOl8Tg9qegzerHqjuOh9f7ygZZiTnjozo2rAJH0ZTvbFCECeZWQI4vCZrXinqTo09w4HQXphN_-UYTC0IW4tBpooEGakBP3pfnUZPjfPexmfuRZlsrwg%3D&sa=X&ved=2ahUKEwiArf-jgOuEAxXK7LsIHb_0DlkQ6RN6BAguEAE&biw=1920&bih=919&dpr=1"}  className="card-recomendations-container">
           <div className="user-recomendations-info-container">
             <div className="blue-box-reco-container">
               <img className="recomendations-slider-img" src={user4} alt="" />
@@ -130,8 +130,8 @@ export default function Recomendations() {
             </p>
             <img src={comillas} alt="comillas" />
           </div>
-        </div>
-        <div className="card-recomendations-container">
+        </Link>
+        <Link  target="_blank" to={"https://www.google.com/search?sca_esv=9cbc8786b516d4ed&sxsrf=ACQVn0-1a8EtlYi8A6o-KPhvuh5Dr0Ph2A:1710118613807&q=Pedro%27s+Remodeling+%26+Home+Improvements+INC&si=AKbGX_pmKbKbTIqdneq6jZwxZ7IuiRvFUMzIgXBBBifuXyB2JgVX6pvSvo964DuRjEc2hGRwricaBRBShCFVxLCtu1Emqa-NleE4BbvvwEH7zg2jNkL8_IxZWYCQyxqfCmH6qvBr4EpBVzb_jE5ZFBJWrZ5_P-VcbwI95hRHgDwjg3y9h2JbAp2qJw_yNav-6CbrOl8Tg9qegzerHqjuOh9f7ygZZiTnjozo2rAJH0ZTvbFCECeZWQI4vCZrXinqTo09w4HQXphN_-UYTC0IW4tBpooEGakBP3pfnUZPjfPexmfuRZlsrwg%3D&sa=X&ved=2ahUKEwiArf-jgOuEAxXK7LsIHb_0DlkQ6RN6BAguEAE&biw=1920&bih=919&dpr=1"}  className="card-recomendations-container">
           <div className="user-recomendations-info-container">
             <div className="blue-box-reco-container">
               <img className="recomendations-slider-img" src={user5} alt="" />
@@ -154,7 +154,7 @@ export default function Recomendations() {
             </p>
             <img src={comillas} alt="comillas" />
           </div>
-        </div>
+        </Link>
       </section>
       <div className="btns-container-recomendations">
         <div className="recomandations-btns">

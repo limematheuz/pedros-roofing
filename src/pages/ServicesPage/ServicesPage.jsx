@@ -3,8 +3,6 @@ import React, { useRef, useState, useEffect } from "react";
 import useFirestoreCollection from "../../useFirestoreCollection";
 import { Link } from "react-router-dom";
 import arrowRight from "../../assets/icons/arrow.svg";
-import insta from "../../assets/icons/instagram.svg";
-import fb from "../../assets/icons/facebook.svg";
 import arrow from "../../assets/icons/arrow.svg";
 import exteriorHouse from "../../assets/icons/exterior-house.svg";
 import interiorHouse from "../../assets/icons/interior-house.svg";
@@ -20,6 +18,7 @@ import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import Certificates from "../../components/Certificates/Certificates";
 import Footer from "../../components/Footer/Footer";
+import Loading from "../../components/Loading/Loading";
 
 export default function ServicesPage() {
   let container = useRef(null);
@@ -40,7 +39,7 @@ export default function ServicesPage() {
   }, [data]);
 
   if (loading) {
-    return <p>ready</p>;
+    return <Loading />;
   }
 
   if (error) {
@@ -84,17 +83,20 @@ export default function ServicesPage() {
                 </div>
               </Link>
               <div className="home-social-links">
-                <a
-                  href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
-                  target="_blank"
-                >
-                  <img src={insta} alt="icon-insta" />
+                <a href="tel:5025454375" target="_blank">
+                  <img src={phone} alt="icon-insta" />
                 </a>
                 <a
-                  href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                  href="mailto:rrjconstructionremodeling@gmail.com"
                   target="_blank"
                 >
-                  <img src={fb} alt="icon-fb" />
+                  <img src={mail} alt="icon-fb" />
+                </a>
+                <a
+                  href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                  target="_blank"
+                >
+                  <img src={wpp} alt="icon-fb" />
                 </a>
               </div>
             </div>
@@ -184,13 +186,19 @@ export default function ServicesPage() {
                   </div>
                 </button>
                 <div className="btns-contact">
-                  <a href="/">
+                  <a href="tel:5025454375" target="_blank">
                     <img src={phone} alt="icon-contact" />
                   </a>
-                  <a href="/">
+                  <a
+                    href="mailto:rrjconstructionremodeling@gmail.com"
+                    target="_blank"
+                  >
                     <img src={mail} alt="icon-contact" />
                   </a>
-                  <a href="/">
+                  <a
+                    href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                    target="_blank"
+                  >
                     <img src={wpp} alt="icon-contact" />
                   </a>
                 </div>
@@ -262,9 +270,7 @@ export default function ServicesPage() {
                   className="img-bg-service"
                 />
               </section>
-              <p>
-              {selectedItem?.parrafTwo}
-              </p>
+              <p>{selectedItem?.parrafTwo}</p>
               <section className="img-item">
                 <div className="cont-zoom">
                   <img src={zoom} alt="icon-zoom" />
@@ -276,14 +282,14 @@ export default function ServicesPage() {
                 />
               </section>
               {Array.isArray(selectedItem?.parrafTre) ? (
-                  <ul className="box-lista-service">
-                    {selectedItem.parrafTre.map((instruccion, index) => (
-                      <li key={index}>{instruccion}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p>{selectedItem?.parrafTre}</p>
-                )}
+                <ul className="box-lista-service">
+                  {selectedItem.parrafTre.map((instruccion, index) => (
+                    <li key={index}>{instruccion}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{selectedItem?.parrafTre}</p>
+              )}
               <section className="img-item">
                 <div className="cont-zoom">
                   <img src={zoom} alt="icon-zoom" />

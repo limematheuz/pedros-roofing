@@ -33,17 +33,20 @@ export default function HomePage() {
               </div>
             </Link>
             <div className="home-social-links">
-              <a
-                href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
-                target="_blank"
-              >
-                <img src={insta} alt="icon-insta" />
+              <a href="tel:5025454375" target="_blank">
+                <img src={phone} alt="icon-insta" />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61555623552424&locale=es_ES"
+                href="mailto:rrjconstructionremodeling@gmail.com"
                 target="_blank"
               >
-                <img src={fb} alt="icon-fb" />
+                <img src={mail} alt="icon-fb" />
+              </a>
+              <a
+                href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                target="_blank"
+              >
+                <img src={wpp} alt="icon-fb" />
               </a>
             </div>
           </div>
@@ -62,7 +65,8 @@ export default function HomePage() {
             INSURANCE?
           </h2>
           <p>
-          We are experts working with claims insurance. Contact us to book a visit to inspect the damage. one call is everything!
+            We are experts working with claims insurance. Contact us to book a
+            visit to inspect the damage. one call is everything!
           </p>
           <section className="container-butons-general">
             <button>Free inspection</button>

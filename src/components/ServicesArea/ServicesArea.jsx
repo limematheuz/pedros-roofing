@@ -6,6 +6,7 @@ import arrow from "../../assets/icons/arrow.svg";
 import exteriorHouse from "../../assets/icons/exterior-house.svg";
 import interiorHouse from "../../assets/icons/interior-house.svg";
 import houseBg from "../../assets/img/bg-service-slider.jpg";
+import Loading from "../../components/Loading/Loading";
 
 export default function ServicesArea() {
   let container = useRef(null);
@@ -21,7 +22,7 @@ export default function ServicesArea() {
   };
 
   if (loading) {
-    return <p>ready</p>;
+    return <Loading />;
   }
 
   if (error) {

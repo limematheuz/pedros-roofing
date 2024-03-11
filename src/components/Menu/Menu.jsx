@@ -2,9 +2,8 @@ import "./Menu.css";
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import whiteLogo from "../../assets/img/white-logo.svg";
-import phone from "../../assets/icons/phone-solid.svg";
-import mail from "../../assets/icons/envelope-regular.svg";
-import wpp from "../../assets/icons/whatsapp.svg";
+import insta from "../../assets/icons/instagram.svg";
+import fb from "../../assets/icons/facebook.svg";
 
 export default function Menu() {
   const [currentPage, setCurrentPage] = useState(""); // Estado para la página actual
@@ -25,7 +24,7 @@ export default function Menu() {
         <img src={whiteLogo} alt="logo-home" />
       </Link>
       <div className="menu-links">
-      <Link
+        <Link
           to={"/"}
           className={`menu-link-item ${currentPage === "/" ? "active" : ""}`}
           onClick={() => handleSetActivePage("/")}
@@ -34,28 +33,35 @@ export default function Menu() {
         </Link>
         <Link
           to={"/services"}
-          className={`menu-link-item ${currentPage === "/services" ? "active" : ""}`}
+          className={`menu-link-item ${
+            currentPage === "/services" ? "active" : ""
+          }`}
           onClick={() => handleSetActivePage("/services")}
         >
           services
         </Link>
         <Link
           to={"/contact"}
-          className={`menu-link-item ${currentPage === "/contact" ? "active" : ""}`}
+          className={`menu-link-item ${
+            currentPage === "/contact" ? "active" : ""
+          }`}
           onClick={() => handleSetActivePage("/contact")}
         >
           contact
         </Link>
       </div>
       <div className="menu-icons">
-        <a href="/">
-          <img src={phone} alt="" />
+        <a
+          href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+          target="_blank"
+        >
+          <img src={insta} alt="" />
         </a>
-        <a href="/">
-          <img src={mail} alt="" />
-        </a>
-        <a href="/">
-          <img src={wpp} alt="" />
+        <a
+          href="https://www.facebook.com/PedrosRemodeling/?paipv=0&eav=AfZ1RsWjEH6ThIYotpfu167BFL22ZTASzRQeu8oKSBovLbTFr2ZJXyMIZ11hvPA9Hjo&_rdr"
+          target="_blank"
+        >
+          <img src={fb} alt="" />
         </a>
       </div>
     </nav>

@@ -19,22 +19,28 @@ export default function Footer() {
             North Carolina & Surrounding Areas United States.
           </p>
           <div className="footer-social-info">
-            <a href="https://" className="footer-social-items">
+            <a
+              href="https://www.instagram.com/pedros.remodelingg/?hl=es%2F"
+              target="_blank"
+              className="footer-social-items"
+            >
               <img src={insta} alt="insta-logo" />
             </a>
-            <a  href="https://" className="footer-social-items">
+            <a
+              href="https://www.facebook.com/PedrosRemodeling/?paipv=0&eav=AfZ1RsWjEH6ThIYotpfu167BFL22ZTASzRQeu8oKSBovLbTFr2ZJXyMIZ11hvPA9Hjo&_rdr"
+              target="_blank"
+              className="footer-social-items"
+            >
               <img src={fb} alt="facebook-logo" />
             </a>
-            <a  href="https://" className="footer-social-items">
+            <a href="https://" className="footer-social-items">
               <img src={linkedin} alt="linkedin-logo" />
             </a>
           </div>
         </section>
         <section className="info-footer-container">
           <div className="footer-services-info">
-            <h4>
-              Services
-            </h4>
+            <h4>Services</h4>
             <div className="footer-services-column">
               <div className="footer-first-column">
                 <p>Commercial Roofing</p>
@@ -52,21 +58,21 @@ export default function Footer() {
             </div>
           </div>
           <div className="footer-contact-info">
-            <h4>
-              Contact
-            </h4>
-            <div className="footer-contact-items">
+            <h4>Contact</h4>
+            <a  href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                target="_blank" className="footer-contact-items">
               <img src={wpp} alt="" />
               <p>+1 (919) 279-1958</p>
-            </div>
-            <div className="footer-contact-items">
+            </a>
+            <a href="tel:5025454375" target="_blank" className="footer-contact-items">
               <img src={phone} alt="" />
               <p>+1 (919) 279-1958</p>
-            </div>
-            <div className="footer-contact-items">
+            </a>
+            <a  href="mailto:rrjconstructionremodeling@gmail.com"
+                target="_blank" className="footer-contact-items">
               <img src={email} alt="" />
               <p>contact@pedrosremodeling.com</p>
-            </div>
+            </a>
           </div>
         </section>
       </section>

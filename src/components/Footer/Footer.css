@@ -114,6 +114,11 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+}
+
+.footer-contact-items:hover p{
+  border-bottom: 1px solid white;
 }
 
 .footer-contact-items img{

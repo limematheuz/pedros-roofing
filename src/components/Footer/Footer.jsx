@@ -59,19 +59,19 @@ export default function Footer() {
           </div>
           <div className="footer-contact-info">
             <h4>Contact</h4>
-            <a  href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+            <a  href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
                 target="_blank" className="footer-contact-items">
               <img src={wpp} alt="" />
               <p>+1 (919) 279-1958</p>
             </a>
-            <a href="tel:5025454375" target="_blank" className="footer-contact-items">
+            <a href="tel:9192791958" target="_blank" className="footer-contact-items">
               <img src={phone} alt="" />
-              <p>+1 (919) 279-1958</p>
+              <p>919-279-1958</p>
             </a>
-            <a  href="mailto:rrjconstructionremodeling@gmail.com"
+            <a  href="mailto:pedrovieyra@yahoo.com"
                 target="_blank" className="footer-contact-items">
               <img src={email} alt="" />
-              <p>contact@pedrosremodeling.com</p>
+              <p>pedrovieyra@yahoo.com</p>
             </a>
           </div>
         </section>

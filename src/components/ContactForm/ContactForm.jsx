@@ -7,7 +7,7 @@ import formBg from "../../assets/img/form-bg.jpg";
 import wpp from "../../assets/icons/whatsapp.svg";
 import check from "../../assets/icons/circle-check-regular.svg";
 
-function ContactForm() {
+function ContactForm({ divRef }) {
   const formRef = useRef(null);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -51,7 +51,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="contact-form-container">
+    <section className="contact-form-container" ref={divRef}>
       <div className="info-form-container">
         <div className="contact-form-info">
           <div className="info-box-form">
@@ -62,17 +62,17 @@ function ContactForm() {
             </p>
           </div>
           <div className="form-social-icons">
-            <a href="tel:5025454375" target="_blank">
+            <a href="tel:9192791958" target="_blank">
               <img src={phone} alt="icon-cel" />
             </a>
             <a
-              href="mailto:rrjconstructionremodeling@gmail.com"
+              href="mailto:pedrovieyra@yahoo.com"
               target="_blank"
             >
               <img src={envelope} alt="icon-mail" />
             </a>
             <a
-              href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+              href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
               target="_blank"
             >
               <img src={wpp} alt="icon-wss" />

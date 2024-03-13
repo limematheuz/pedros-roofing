@@ -1,9 +1,8 @@
 import "./FreeInspectionPage.css";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
 import houseBg from "../../assets/img/banner-inspection.jpg";
+import houseBgMobile from "../../assets/img/banner-inspection-responsive.jpg";
 import arrowRight from "../../assets/icons/arrow.svg";
-import insta from "../../assets/icons/instagram.svg";
-import fb from "../../assets/icons/facebook.svg";
 import Benefits from "../../components/Benefits/Benefits";
 import ResponsiveBenefits from "../../components/Benefits/ResponsiveBenefits";
 import Certificates from "../../components/Certificates/Certificates";
@@ -17,6 +16,12 @@ import mail from "../../assets/icons/envelope-regular.svg";
 import wpp from "../../assets/icons/whatsapp.svg";
 
 export default function HomePage() {
+  const myDivRef = useRef(null);
+
+  const scrollToDiv = () => {
+    myDivRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <main className="body-app-container">
       <section className="header-menu-container">
@@ -26,24 +31,21 @@ export default function HomePage() {
             <h3>North Carolina, USA</h3>
           </div>
           <div className="home-btns">
-            <Link to={"/contact"} className="header-contact-btn-cont">
+            <a href="tel:9192791958" className="header-contact-btn-cont">
               <p className="contact-button">contact us</p>
               <div className="cont-btn-arrow-home">
                 <img src={arrowRight} alt="" />
               </div>
-            </Link>
+            </a>
             <div className="home-social-links">
-              <a href="tel:5025454375" target="_blank">
+              <a href="tel:9192791958" target="_blank">
                 <img src={phone} alt="icon-insta" />
               </a>
-              <a
-                href="mailto:rrjconstructionremodeling@gmail.com"
-                target="_blank"
-              >
+              <a href="mailto:pedrovieyra@yahoo.com" target="_blank">
                 <img src={mail} alt="icon-fb" />
               </a>
               <a
-                href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
                 target="_blank"
               >
                 <img src={wpp} alt="icon-fb" />
@@ -54,7 +56,7 @@ export default function HomePage() {
         <Benefits />
         <ResponsiveBenefits />
         <img className="header-house-bg" src={houseBg} alt="bg-page" />
-        <img className="header-mobile-bg" src={houseBg} alt="bg-page" />
+        <img className="header-mobile-bg" src={houseBgMobile} alt="bg-page" />
       </section>
       <section className="container-general">
         <Certificates />
@@ -69,15 +71,18 @@ export default function HomePage() {
             visit to inspect the damage. one call is everything!
           </p>
           <section className="container-butons-general">
-            <button>Free inspection</button>
+            <button onClick={scrollToDiv}>Free inspection</button>
             <div className="btns-financing-flex">
-              <a href="">
+              <a href="tel:9192791958" target="_blank">
                 <img src={phone} alt="icon-phone" />
               </a>
-              <a href="">
+              <a href="mailto:pedrovieyra@yahoo.com" target="_blank">
                 <img src={mail} alt="icon-phone" />
               </a>
-              <a href="">
+              <a
+                href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
+                target="_blank"
+              >
                 <img src={wpp} alt="icon-phone" />
               </a>
             </div>
@@ -86,7 +91,7 @@ export default function HomePage() {
         <FreeInspectionBenefits />
         <ServicesArea />
         <OurStory />
-        <ContactForm />
+        <ContactForm divRef={myDivRef} />
         <Footer />
       </section>
     </main>

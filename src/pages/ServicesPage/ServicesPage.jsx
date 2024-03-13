@@ -1,7 +1,6 @@
 import "./ServicesPage.css";
 import React, { useRef, useState, useEffect } from "react";
 import useFirestoreCollection from "../../useFirestoreCollection";
-import { Link } from "react-router-dom";
 import arrowRight from "../../assets/icons/arrow.svg";
 import arrow from "../../assets/icons/arrow.svg";
 import exteriorHouse from "../../assets/icons/exterior-house.svg";
@@ -26,6 +25,11 @@ export default function ServicesPage() {
   const defaultSelectedItem = data.find((item) => item.order === 2);
   const [selectedItem, setSelectedItem] = useState(defaultSelectedItem);
   const [filterActive, setFilterActive] = useState(false);
+  const myDivRef = useRef(null);
+
+  const scrollToDiv = () => {
+    myDivRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const handleItemClick = (clickedItem) => {
     if (clickedItem !== selectedItem) {
@@ -76,24 +80,21 @@ export default function ServicesPage() {
               <h3>Professional service</h3>
             </div>
             <div className="home-btns">
-              <Link to={"/contact"} className="header-contact-btn-cont">
+              <a href="tel:9192791958" className="header-contact-btn-cont">
                 <p className="contact-button">contact us</p>
                 <div className="cont-btn-arrow-home">
                   <img src={arrowRight} alt="" />
                 </div>
-              </Link>
+              </a>
               <div className="home-social-links">
-                <a href="tel:5025454375" target="_blank">
+                <a href="tel:9192791958" target="_blank">
                   <img src={phone} alt="icon-insta" />
                 </a>
-                <a
-                  href="mailto:rrjconstructionremodeling@gmail.com"
-                  target="_blank"
-                >
+                <a href="mailto:pedrovieyra@yahoo.com" target="_blank">
                   <img src={mail} alt="icon-fb" />
                 </a>
                 <a
-                  href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                  href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
                   target="_blank"
                 >
                   <img src={wpp} alt="icon-fb" />
@@ -179,24 +180,24 @@ export default function ServicesPage() {
             <div className="banner-service">
               <h4>{selectedItem?.name}</h4>
               <div className="section-butons">
-                <button>
+                <button  onClick={scrollToDiv}>
                   Free inspection
                   <div className="cont-btn">
                     <img src={arrow} alt="icon-buton" />
                   </div>
                 </button>
                 <div className="btns-contact">
-                  <a href="tel:5025454375" target="_blank">
+                  <a href="tel:9192791958" target="_blank">
                     <img src={phone} alt="icon-contact" />
                   </a>
                   <a
-                    href="mailto:rrjconstructionremodeling@gmail.com"
+                    href="mailto:pedrovieyra@yahoo.com"
                     target="_blank"
                   >
                     <img src={mail} alt="icon-contact" />
                   </a>
                   <a
-                    href="https://wa.me/15025454375?text=Hello,%20i%20need%20more%20information"
+                    href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information"
                     target="_blank"
                   >
                     <img src={wpp} alt="icon-contact" />
@@ -304,7 +305,7 @@ export default function ServicesPage() {
           </section>
         )}
         <Certificates />
-        <ContactForm />
+        <ContactForm  divRef={myDivRef}/>
         <Footer />
       </section>
     </main>

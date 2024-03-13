@@ -32,7 +32,7 @@ export default function AdsBanner() {
               <a href="tel:9192791958">
                 <img src={phone} alt="" />
               </a>
-              <a href="https://wa.me/9192791958?text=Hello,%20I%20need%20more%20information">
+              <a href="https://wa.me/19192791958?text=Hello,%20i%20need%20more%20information">
                 <img src={wpp} alt="" />
               </a>
             </div>

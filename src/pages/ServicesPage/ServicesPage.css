@@ -229,6 +229,10 @@
   cursor: pointer;
 }
 
+.part-right .item-slider:last-child {
+  margin-right: 6%;
+}
+
 .item-slider.active {
   filter: grayscale(0);
   border: 2px solid #0065d9;
@@ -698,5 +702,23 @@
     justify-content: center;
     gap: 10px;
     list-style-type: disc;
+  }
+
+  .info-name-service {
+    height: 15%;
+  }
+
+  
+  .part-right {
+    border-radius: 0px;
+  }
+
+  .btns-contact a {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .btns-contact a img {
+    width: 28px;
   }
 }

@@ -17,8 +17,9 @@ function ContactForm({ divRef }) {
     const name = event.target.elements.name.value;
     const number = event.target.elements.number.value;
     const email = event.target.elements.email.value;
+    const service = event.target.elements.service.value;
 
-    if (!name || !number || !email) {
+    if (!name || !number || !email || !service) {
       alert("Please complete all required fields.");
       return;
     }
@@ -42,11 +43,10 @@ function ContactForm({ divRef }) {
     if (res.success) {
       console.log("Success", res);
       setIsSuccess(true);
-      // Resetea el formulario después de un tiempo (puedes ajustar el tiempo según tus necesidades)
       setTimeout(() => {
         formRef.current.reset();
         setIsSuccess(false);
-      }, 3000); // 3000 milisegundos = 3 segundos
+      }, 3000);
     }
   };
 
@@ -65,10 +65,7 @@ function ContactForm({ divRef }) {
             <a href="tel:9192791958" target="_blank">
               <img src={phone} alt="icon-cel" />
             </a>
-            <a
-              href="mailto:pedrovieyra@yahoo.com"
-              target="_blank"
-            >
+            <a href="mailto:pedrovieyra@yahoo.com" target="_blank">
               <img src={envelope} alt="icon-mail" />
             </a>
             <a
@@ -81,6 +78,20 @@ function ContactForm({ divRef }) {
         </div>
         <div className="second-contact-form-info">
           <form ref={formRef} onSubmit={onSubmit} className="form-container">
+            <label htmlFor="service">
+              <select name="service" id="service">
+                <option value="">Select a service</option>
+                <option value="commercialroofing">Commercial Roofing</option>
+                <option value="residencialroofing">Residencial Roofing</option>
+                <option value="emergencyroofing">Emergency Roofing</option>
+                <option value="roofinstallation">Roof Installation</option>
+                <option value="roofrepairs">Roof Repairs</option>
+                <option value="roofinspections">Roof Inspections</option>
+                <option value="siding">Siding</option>
+                <option value="remodeling">Remodeling</option>
+                <option value="painting">Painting</option>
+              </select>
+            </label>
             <label htmlFor="name">
               <input
                 type="text"
